@@ -1,0 +1,27 @@
+.why {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&__content {
+		width: 70%;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	&__btn {
+		margin: 0 15px;
+	}
+	&__list {
+		margin-bottom: 50px;
+	}
+
+	&__img {
+		width: 30%;
+	}
+}

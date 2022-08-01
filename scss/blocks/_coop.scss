@@ -1,0 +1,19 @@
+.coop {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		width: 47%;
+		padding-right: 30px;
+	}
+
+	&__list {
+		margin-bottom: 50px;
+	}
+
+	&__content {
+		width: 53%;
+	}
+}

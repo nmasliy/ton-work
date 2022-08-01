@@ -1,0 +1,33 @@
+.categories {
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -46px;
+		padding-bottom: 40px;
+		ul {
+			max-width: calc(50% - 92px);
+			margin: 0 46px;
+		}
+		li {
+			margin-bottom: 20px;
+			a {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			span {
+				@extend .color-secondary;
+				font-weight: 500;
+				font-size: 14px;
+				margin-left: 70px;
+			}
+		}
+	}
+
+	&__btn-wrapper {
+		text-align: center;
+	}
+}
