@@ -1,0 +1,41 @@
+.hero {
+	padding-top: 125px;
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&__content {
+		width: 67%;
+	}
+
+	&__title {
+		font-family: 'Playfair Display', sans-serif;
+		font-weight: 500;
+		font-size: 56px;
+		line-height: 1.46;
+		letter-spacing: 0.01em;
+		margin-bottom: 45px;
+		max-width: 600px;
+	}
+
+	&__subtitle {
+		font-size: 24px;
+		margin-bottom: 70px;
+		max-width: 445px;
+	}
+
+	&__buttons {
+		display: flex;
+	}
+
+	&__btn {
+		&:nth-child(2) {
+			margin-left: 30px;
+		}
+	}
+
+	&__img {
+		width: 33%;
+	}
+}

@@ -1,0 +1,138 @@
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	&--lg {
+		max-width: 1360px;
+	}
+}
+
+.logo {
+	display: inline-block;
+	img {
+		vertical-align: middle;
+	}
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	&__content {
+		flex-grow: 1;
+		padding-top: 120px;
+	}
+}
+
+.section {
+	padding: 50px 0;
+	&__title {
+		font-size: 32px;
+		line-height: 1.2;
+		font-family: 'Playfair Display', sans-serif;
+		font-weight: 500;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+	&__subtitle {
+		font-size: 20px;
+		line-height: 1.4;
+		margin-bottom: 30px;
+		text-align: center;
+		@extend .color-secondary;
+	}
+}
+
+.color-secondary {
+	background: linear-gradient(
+		45.5deg,
+		#008ce9 1.68%,
+		#00bb9a 97.52%,
+		#68e0cf 97.52%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px 30px;
+	text-align: center;
+	cursor: pointer;
+	white-space: break-spaces;
+	color: $white;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.75;
+	border-radius: 15px;
+	transition: $transition;
+	color: $accent;
+
+	&--primary {
+		background-color: $accent;
+		color: $white;
+		&:active {
+			background-color: #0E7500;
+		}
+		@media screen and (min-width: $mobileBreakpoint) {
+			&:hover {
+				background-color: #338528;
+			}
+		}
+	}
+
+	&--outline {
+		border: 1px solid $accent;
+		&:active {
+			background-color: #0E7500;
+		}
+		@media screen and (min-width: $mobileBreakpoint) {
+			&:hover {
+				background-color: #338528;
+				color: $white;
+				border-color: transparent;
+			}
+		}
+		
+	}
+
+	&--underline {
+		text-decoration: underline;
+		&:active {
+			color: #0E7500;
+		}
+		@media screen and (min-width: $mobileBreakpoint) {
+			&:hover {
+				color: #0E7500;
+			}
+		}
+	}
+
+	&.disabled {
+		
+	}
+}
+
+.overlay {
+		display: none;
+		position: fixed;
+		z-index: 5;
+		left: 0;
+		top: 0;
+		bottom: 9px;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		transition: $transition;
+		opacity: 0;
+		background-color: rgba(#272727, 0.5);
+		&.active {
+			opacity: 1;
+			display: block;
+		}
+	}
