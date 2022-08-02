@@ -1,16 +1,16 @@
 window.addEventListener('DOMContentLoaded', function () {
 	function initMenu() {
 		const $html = document.querySelector('html')
-		const $headerMenu = document.querySelector('.menu')
+		const $headerMenu = document.querySelector('.header__menu-inner')
 		const $headerBtn = document.querySelector('.header__burger')
-		const $headerCloseBtn = document.querySelector('.menu__close')
-		const $headerOverlay = document.querySelector('.header__overlay')
+		const $headerCloseBtn = document.querySelector('.header__close')
+		const $headerOverlay = document.querySelector('.overlay')
 		const TRANSITION_DELAY = 400
+		const MOBILE_MENU_BREAKPOINT = 1024
 
 		let isInit = false
 
 		const checkScreenWidth = () => {
-			const MOBILE_MENU_BREAKPOINT = 1024
 			// Активируем меню только на экранах <= 1024
 			if (window.innerWidth <= MOBILE_MENU_BREAKPOINT && !isInit) {
 				isInit = true
@@ -28,11 +28,10 @@ window.addEventListener('DOMContentLoaded', function () {
 			$headerOverlay.style.display = 'block'
 			$headerMenu.style.display = 'block'
 			$html.classList.add('overflow-hidden')
-
 			setTimeout(function () {
 				$headerOverlay.classList.add('active')
 				$headerMenu.classList.add('active')
-			}, 50)
+			}, 1)
 		}
 
 		function closeMenu() {
@@ -45,39 +44,45 @@ window.addEventListener('DOMContentLoaded', function () {
 				$headerMenu.style.display = ''
 			}, TRANSITION_DELAY)
 		}
-	}
+		function initMenuHover() {
+			const $items = document.querySelectorAll('.navigation__list > li')
+			const $links = document.querySelectorAll('.navigation__list > li > a')
+			const $overlay = document.querySelector('.overlay')
+			const TRANSITION_DELAY = 300
 
-	function initMenuHover() {
-		const $items = document.querySelectorAll('.navigation__list > li')
-		const $overlay = document.querySelector('.overlay')
-		const TRANSITION_DELAY = 300
+			if (window.innerWidth > MOBILE_MENU_BREAKPOINT) {
+				$items.forEach(item => {
+					let isHover = false
 
-		if ($items.length > 0) {
-			$items.forEach(item => {
-				let isHover = false
-
-				item.addEventListener('mouseenter', function () {
-					isHover = true
-					// Показываем блок
-					$overlay.classList.add('active')
-					setTimeout(function () {
-						// Добавляем стили
-					}, 1)
+					item.addEventListener('mouseenter', function () {
+						isHover = true
+						// Показываем блок
+						$overlay.classList.add('active')
+						setTimeout(function () {
+							// Добавляем стили
+						}, 1)
+					})
+					item.addEventListener('mouseleave', function () {
+						isHover = false
+						// Убираем стили
+						$overlay.classList.remove('active')
+						setTimeout(function () {
+							if (!isHover) {
+								// Скрываем блок
+							}
+						}, TRANSITION_DELAY)
+					})
 				})
-				item.addEventListener('mouseleave', function () {
-					isHover = false
-					// Убираем стили
-					$overlay.classList.remove('active')
-					setTimeout(function () {
-						if (!isHover) {
-							// Скрываем блок
-						}
-					}, TRANSITION_DELAY)
+			} else {
+				$links.forEach(link => {
+					link.addEventListener('click', function(e) {
+						e.preventDefault();
+						link.nextElementSibling.classList.toggle('active');
+					})
 				})
-			})
+			}
 		}
+		initMenuHover()
 	}
-
 	initMenu()
-	initMenuHover()
 })

@@ -14,13 +14,33 @@
 		flex-wrap: wrap;
 	}
 
+	&__menu {
+		display: flex;
+		align-items: center;
+		.header__buttons {
+			display: none;
+		}
+		&.active {
+			.header__buttons {
+				display: block;
+			}
+		}
+	}
+
 	&__navigation {
 		margin-right: 49px;
 		margin-left: auto;
 	}
 
+	&__close {
+		display: none;
+		color: $main;
+		font-size: 50px;
+	}
+
 	&__burger {
 		display: none;
+		margin-left: 30px;
 		span {
 			display: block;
 			width: 24px;
@@ -38,85 +58,52 @@
 	}
 }
 
-.menu {
-	display: none;
-	&__navigation {
-		ul {
-			flex-direction: column;
-		}
-	}
-	&__close {
-		position: absolute;
-		right: 30px;
-		top: 24px;
-		z-index: 4;
-		display: none;
-		@media screen and (max-width: $mobileBreakpoint) {
-			display: block;
-		}
-	}
-	&.active {
-		transform: translateX(0);
-	}
-	@media screen and (max-width: $mobileBreakpoint) {
-		flex-direction: column;
-		align-items: flex-start;
-		position: fixed;
-		right: 0;
-		top: 0;
-		width: 280px;
-		height: 100%;
-		z-index: 7;
-		background-color: $white;
-		overflow: auto;
-		transition: $transition;
-		transform: translateX(150%);
-		padding: 50px 20px;
-	}
-}
-
 .navigation {
 	&__list {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		// margin: 0 -12px;
 
 		& > li {
 			position: relative;
-			padding-top: 45px;
-			&:hover {
-				.navigation__submenu {
-					display: block;
+			@media screen and (min-width: $mobileBreakpoint) {
+				&:hover {
+					.navigation__submenu {
+						display: block;
+					}
 				}
 			}
 			& > a {
 				display: block;
-				padding: 0 12px 45px;
+				padding: 45px 12px;
 			}
 		}
 
 		a {
 			transition: $transition;
-			&:hover {
-				color: $accent;
+			@media screen and (min-width: $mobileBreakpoint) {
+				&:hover {
+					color: $accent;
+				}
 			}
 		}
 	}
 
 	&__submenu {
-		position: fixed;
-		top: 115px;
-		left: 0;
-		width: 100%;
-		padding: 30px 0;
 		display: none;
-		border-top: 1px solid #d6d6d6;
-		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
-			-2px -5px 8px rgba(0, 0, 0, 0.05);
-		border-radius: 0px 0px 20px 20px;
-		background-color: $white;
-		min-height: 400px;
+		@media screen and (min-width: 1024px) {
+			position: fixed;
+			top: 115px;
+			left: 0;
+			width: 100%;
+			padding: 30px 0;
+			border-top: 1px solid #d6d6d6;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+				-2px -5px 8px rgba(0, 0, 0, 0.05);
+			border-radius: 0px 0px 20px 20px;
+			background-color: $white;
+			min-height: 400px;
+		}
 	}
 
 	&__submenu-row {
@@ -146,6 +133,7 @@
 	}
 
 	&__submenu-title {
+		display: block;
 		font-size: 18px;
 		line-height: 1.56;
 		margin-bottom: 5px;
