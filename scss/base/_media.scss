@@ -4,7 +4,8 @@
 		min-width: auto;
 	}
 }
-@media screen and (max-width: 1024px) {
+// 1024px
+@media screen and (max-width: $mobileBreakpoint) {
 	body {
 		font-size: 20px;
 	}
@@ -52,7 +53,7 @@
 			display: block;
 			position: absolute;
 			right: 10px;
-			top: 10px;
+			top: -10px;
 			z-index: 5;
 		}
 		&__menu {
@@ -275,6 +276,11 @@
 			}
 		}
 	}
+	.logo {
+		img {
+			width: 140px;
+		}
+	}
 	.footer {
 		&__col {
 			width: 100%;
@@ -287,6 +293,7 @@
 		}
 	}
 	.header {
+		padding: 5px 0;
 		&__buttons {
 			display: none;
 		}
