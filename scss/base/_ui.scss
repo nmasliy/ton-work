@@ -69,7 +69,7 @@
 	color: $white;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.75;
+	line-height: 1.5;
 	border-radius: 15px;
 	transition: $transition;
 	color: $accent;
@@ -92,7 +92,10 @@
 	}
 
 	&--outline {
-		border: 1px solid $accent;
+		border: 1px solid #044407;
+		color: #044407;
+		font-weight: 600;
+		text-decoration: underline;
 		&:active {
 			background-color: #0e7500;
 		}
