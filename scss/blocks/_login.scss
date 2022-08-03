@@ -51,6 +51,13 @@
 		}
 	}
 
+	&__radiobuttons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		margin-bottom: 50px;
+	}
+
 	&__divider {
 		display: flex;
 		align-items: center;
