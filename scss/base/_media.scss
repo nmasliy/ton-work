@@ -187,8 +187,9 @@
 		}
 	}
 	.login {
-		padding: 60px 0;
-		&__img {
+		padding: 40px 0;
+		&__img,
+		&__img-left {
 			display: none;
 		}
 	}

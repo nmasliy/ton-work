@@ -17,7 +17,17 @@
 	}
 }
 // /Block scroll for Safari
-
-.pt-10 {
-	padding-top: 10px;
+.page {
+	.p-0 {
+		padding: 0;
+	}
+	.pt-10 {
+		padding-top: 10px;
+	}
+	.mb-30 {
+		margin-bottom: 30px;
+	}
+	.mb-55 {
+		margin-bottom: 55px;
+	}
 }

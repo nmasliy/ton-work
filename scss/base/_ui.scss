@@ -70,10 +70,10 @@
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
-	border-radius: 15px;
+	border-radius: 10px;
 	transition: $transition;
 	color: $accent;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 
 	&--primary {
 		background-color: $accent;
@@ -92,7 +92,7 @@
 	}
 
 	&--outline {
-		border: 1px solid #044407;
+		border: 2px solid #044407;
 		color: #044407;
 		font-weight: 600;
 		span {
@@ -241,6 +241,14 @@
 			display: block;
 			font-size: 14px;
 			line-height: 1.43;
+			&.required {
+				&::before {
+					content: '*';
+					color: #e5aaaa;
+					font-weight: 700;
+					font-size: 16px;
+				}
+			}
 		}
 		input {
 			display: block;
@@ -254,6 +262,47 @@
 			&::placeholder {
 				color: #757575;
 			}
+		}
+	}
+
+	&__item-caption,
+	&__avatar-caption {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.67;
+		color: #a2c1a3;
+		margin-top: 5px;
+	}
+
+	&__avatar {
+		margin-bottom: 20px;
+		input {
+			display: none;
+		}
+		label {
+			display: block;
+			cursor: pointer;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__avatar-body {
+		width: 65px;
+		height: 65px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			right: 0;
+			bottom: 0;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: url('../img/avatar-edit.svg') center no-repeat;
+		}
+		img {
+			width: 65px;
+			height: 65px;
 		}
 	}
 

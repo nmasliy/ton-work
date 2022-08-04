@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;500;600&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -139,43 +139,57 @@
 			<section class="login section">
 				<div class="container">
 					<div class="login__inner">
-						<h1 class="section__title">Вход</h1>
+						<h1 class="section__title mb-30">Создание профиля</h1>
 						<div class="login__content">
-							<a href="#" class="login__btn btn btn--outline btn--flex">
-								<span>Войти с помощью</span>
-								<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd"
-										d="M2.31637 9.73591C9.60438 6.56064 14.4642 4.46731 16.8958 3.45591C23.8386 0.568176 25.2812 0.0665454 26.2215 0.0499813C26.4283 0.0463382 26.8907 0.0975917 27.1903 0.34064C27.4432 0.545865 27.5128 0.823095 27.5461 1.01767C27.5794 1.21225 27.6208 1.6555 27.5879 2.00184C27.2117 5.95493 25.5837 15.548 24.7555 19.9756C24.4051 21.849 23.715 22.4772 23.047 22.5387C21.5952 22.6722 20.4928 21.5792 19.0866 20.6575C16.8863 19.2151 15.6433 18.3173 13.5075 16.9098C11.0392 15.2832 12.6393 14.3893 14.0459 12.9282C14.4141 12.5459 20.8107 6.72763 20.9345 6.19982C20.95 6.13381 20.9644 5.88775 20.8182 5.75782C20.672 5.6279 20.4563 5.67233 20.3006 5.70766C20.0799 5.75775 16.5648 8.08107 9.75543 12.6776C8.75769 13.3627 7.85398 13.6965 7.04428 13.6791C6.15165 13.6598 4.43459 13.1743 3.15813 12.7594C1.5925 12.2505 0.348175 11.9814 0.456529 11.1171C0.512966 10.6669 1.13291 10.2065 2.31637 9.73591Z"
-										fill="#044407" />
-								</svg>
-							</a>
-							<div class="login__divider">или</div>
 							<div class="login__form form">
 								<form action="#">
+									<div class="form__item form__avatar">
+										<label>
+											<span class="form__avatar-body">
+												<img src="img/avatar.svg" height="65" height="65" alt="avatar">
+											</span>
+											<input type="file">
+										</label>
+										<div class="form__avatar-caption">*Профилю с установленной фотографией больше доверяют</div>
+									</div>
 									<div class="form__item">
 										<label>
-											<span>Telegram/Логин</span>
-											<input required type="text" placeholder="Логин">
+											<span class="required">Имя</span>
+											<input required type="text" placeholder="Виталий">
 										</label>
 									</div>
 									<div class="form__item">
 										<label>
-											<span>Пароль для входа в систему</span>
-											<input required type="text" placeholder="Пароль">
+											<span class="required">Фамилия</span>
+											<input required type="text" placeholder="Иванов">
 										</label>
 									</div>
-									<a class="form__link" href="#">Восстановить пароль</a>
-									<button class="form__btn btn btn--outline btn--disabled">Войти</button>
+									<div class="form__item">
+										<label>
+											<span class="required">Логин</span>
+											<input required type="text" placeholder="vitaliy1">
+										</label>
+										<div class="form__item-caption">Ура! Ваш логин свободен</div>
+									</div>
+									<div class="form__item">
+										<label>
+											<span class="required">Страна</span>
+											<input required type="text" placeholder="vitaliy">
+										</label>
+									</div>
+									<div class="form__item mb-55">
+										<label>
+											<span class="required">Город</span>
+											<input required type="text" placeholder="Виталий">
+										</label>
+									</div>
+									<button class="form__btn btn btn--outline">Сохранить</button>
 								</form>
 							</div>
-							<div class="login__footer">
-								<div class="login__link-caption">У меня уже есть аккаунт.</div>
-								<a class="login__link btn btn--underline" href="#"><span>Создать аккаунт</span></a>
-							</div>
-							<div class="login__img">
-								<img src="img/login.svg" width="172" height="382" alt="login">
-							</div>
 						</div>
+					</div>
+					<div class="login__img-left">
+						<img src="img/login-left.svg" width="172" height="382" alt="login">
 					</div>
 				</div>
 			</section>
