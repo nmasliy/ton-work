@@ -7,6 +7,18 @@
 	background-color: $white;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
+	&-profile {
+		.navigation__list > li > a {
+			padding: 41px 10px;
+		}
+		.header__menu-inner {
+			margin: 0 auto;
+		}
+		.header__menu {
+			flex-grow: 1;
+		}
+	}
+
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -28,6 +40,20 @@
 			.header__buttons {
 				display: block;
 			}
+		}
+	}
+
+	&__profile {
+		display: flex;
+		align-items: center;
+	}
+
+	&__avatar {
+		margin-left: 30px;
+		img {
+			border-radius: 50%;
+			width: 65px;
+			height: 65px;
 		}
 	}
 	
@@ -93,6 +119,10 @@
 			& > a {
 				display: block;
 				padding: 41px 22px;
+				& > img {
+					vertical-align: text-bottom;
+					margin-left: 5px;
+				}
 			}
 		}
 

@@ -3,6 +3,13 @@
 		flex-shrink: 1;
 		min-width: auto;
 	}
+	.review {
+		gap: 0 20px;
+		&__rating,
+		&__content {
+			width: 50%;
+		}
+	}
 }
 // 1024px
 @media screen and (max-width: $mobileBreakpoint) {
@@ -29,6 +36,39 @@
 			width: calc(50% - 40px);
 		}
 	}
+	.card {
+		&__title {
+			font-size: 16px;
+		}
+	}
+	.review {
+		display: block;
+		&__content {
+			margin-bottom: 30px;
+			width: 100%;
+		}
+		&__rating {
+			width: 100%;
+		}
+	}
+	.vacancy-card {
+		&__desc,
+		&__tags {
+			font-size: 16px;
+		}
+	}
+	.profile {
+		padding-top: 35px;
+		&__main {
+			flex-wrap: wrap;
+		}
+		&__info,
+		&__contacts,
+		&__desc {
+			width: auto;
+			flex-grow: 1;
+		}
+	}
 	.login {
 		&__img {
 			right: -200px;
@@ -36,6 +76,14 @@
 	}
 	.header {
 		padding: 12px 0;
+		&-profile {
+			.navigation__list > li > a {
+				padding: 10px 0;
+			}
+			.header__menu {
+				flex-grow: 0;
+			}
+		}
 		&__menu-inner {
 			display: none;
 			transform: translateX(150%);
@@ -102,6 +150,9 @@
 				font-weight: 500;
 				text-align: center;
 				padding: 10px 0;
+				& > img {
+					margin-bottom: 2px;
+				}
 			}
 		}
 	}
@@ -184,6 +235,59 @@
 		&__subtitle {
 			font-size: 18px;
 			margin-bottom: 15px;
+		}
+	}
+	.portfolio {
+		&__title {
+			font-size: 16px;
+		}
+	}
+	.vacancy-card__desc,
+	.vacancy-card__tags {
+		font-size: 14px;
+	}
+	.profile {
+		&__inner {
+			flex-wrap: wrap;
+		}
+		&__btn {
+			width: auto;
+		}
+		&__title {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 8px 12px;
+			span {
+				display: flex;
+				align-items: center;
+				gap: 8px 12px;
+			}
+			button,
+			a {
+				margin: 0;
+			}
+		}
+		&__content {
+			width: auto;
+			margin: 0;
+		}
+		&__aside {
+			width: 100%;
+			display: flex;
+			margin-bottom: 50px;
+			&-col {
+				display: flex;
+				flex-direction: column-reverse;
+				width: 100%;
+				padding-left: 30px;
+			}
+		}
+		&__photo {
+			flex-shrink: 0;
+		}
+		&__change-link {
+			order: -1;
 		}
 	}
 	.login {
@@ -317,6 +421,17 @@
 			}
 		}
 	}
+	.portfolio {
+		display: block;
+		&__item {
+			width: auto;
+			margin-bottom: 30px;
+			min-height: auto;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 @media screen and (max-width: 550px) {
 	.section {
@@ -327,6 +442,53 @@
 	}
 	.btn {
 		flex-grow: 1;
+	}
+	.review {
+		&__rating-item {
+			img {
+				width: 15px;
+				height: 15px;
+			}
+		}
+		&__rating-title {
+			font-size: 14px;
+		}
+	}
+	.profile {
+		&__aside {
+			display: block;
+			&-col {
+				display: block;
+				width: auto;
+				padding-left: 0;
+			}
+		}
+		&__btn {
+			min-width: 250px;
+		}
+	}
+	.card {
+		flex-direction: column;
+		&__content {
+			margin-bottom: 30px;
+			margin-right: 0;
+		}
+		&__price {
+			display: inline-block;
+		}
+		&__price-caption {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		&__info {
+			display: block;
+			text-align: left;
+		}
+	}
+	.vacancy {
+		&__price {
+			margin-bottom: 10px;
+		}
 	}
 	.coop {
 		&__btn {
@@ -417,6 +579,35 @@
 			.header__btn {
 				margin: 5px 0;
 			}
+		}
+		&__burger {
+			margin-left: 15px;
+		}
+		&__avatar {
+			margin-left: 15px;
+			img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.profile {
+		&__btn {
+			width: 100%;
+		}
+	}
+	.review {
+		&__answer {
+			margin-left: 0;
+		}
+	}
+	.profile-photo {
+		& > img {
+			max-height: 400px;
+			height: auto;
+			width: 100%;
 		}
 	}
 }
