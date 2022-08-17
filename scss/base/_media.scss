@@ -218,6 +218,16 @@
 			}
 		}
 	}
+	.editing {
+		&__box-col {
+			&--offset {
+				padding-left: 0;
+			}
+		}
+		&__item--start span {
+			width: auto;
+		}
+	}
 }
 @media screen and (max-width: 768px) {
 	body {
@@ -235,6 +245,42 @@
 		&__subtitle {
 			font-size: 18px;
 			margin-bottom: 15px;
+		}
+	}
+	.editing {
+		&__item-add {
+			.editing__item-add-name {
+				margin-right: 10px;
+			}
+			.editing__item-add-value {
+				width: calc(100% - 215px);
+			}
+		}
+		&__box--contacts {
+			.editing__box-row {
+				flex-direction: column-reverse;
+			}
+		}
+		&__box-col {
+			width: 100%;
+			.editing__item span {
+				width: 165px;
+			}
+		}
+		&__head {
+			flex-wrap: wrap;
+		}
+		&__change-link {
+			margin-left: 0;
+		}
+		&__item {
+			margin-bottom: 30px;
+			&--start > label {
+				max-width: calc(100% - 40px);
+			}
+			span {
+				margin-right: 10px;
+			}
 		}
 	}
 	.portfolio {
@@ -385,6 +431,9 @@
 			margin-bottom: 40px;
 		}
 	}
+	.form__item-textarea-caption {
+		margin-right: 40px;
+	}
 }
 @media screen and (max-width: 650px) {
 	.section {
@@ -442,6 +491,39 @@
 	}
 	.btn {
 		flex-grow: 1;
+	}
+	.editing {
+		&__box-col .editing__item span {
+			width: auto;
+			margin-bottom: 5px;
+		}
+		&__box {
+			.editing__select-wrapper {
+				max-width: calc(100% - 40px);
+			}
+		}
+		&__select-wrapper {
+			display: block;
+		}
+		&__selects select {
+			flex-grow: 1;
+		}
+		&__item-btn {
+			margin-bottom: 7px;
+		}
+		&__item {
+			&--edit {
+				align-items: flex-end;
+			}
+			& > label {
+				display: block;
+				span {
+					margin-bottom: 5px;
+					width: auto;
+					margin-right: 0;
+				}
+			}
+		}
 	}
 	.review {
 		&__rating-item {
@@ -593,6 +675,28 @@
 	}
 }
 @media screen and (max-width: 400px) {
+	.editing {
+		&__avatar {
+			width: 100%;
+			label {
+				& > img {
+					max-height: 400px;
+					height: auto;
+					width: 100%;
+				}
+			}
+		}
+		&__item-add {
+			.editing {
+				&__item-add-value {
+					width: calc(50% - 20px);
+				}
+				&__item-add-name {
+					width: calc(50% - 30px);
+				}
+			}
+		}
+	}
 	.profile {
 		&__btn {
 			width: 100%;

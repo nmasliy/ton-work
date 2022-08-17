@@ -76,11 +76,234 @@
 					</div>
 				</div>
 			</header>
-			<main class="page__content pb-60">
-				<section class="editing">
+			<main class="page__content pb-0">
+				<section class="editing section">
 					<div class="container">
 						<div class="editing__inner">
-							
+							<form action="#" class="editing__form form">
+								<div class="editing__head">
+									<div class="editing__avatar">
+										<label>
+											<img src="img/profile-photo.jpg" width="160" height="160" alt="avatar">
+											<input type="file" name="profileAvatar">
+										</label>
+										<div class="editing__avatar-buttons">
+											<button class="editing__avatar-btn" type="button"><img src="img/avatar-delete.svg" width="20" height="20" alt="delete"></button>
+											<button class="editing__avatar-btn" type="button"><img src="img/avatar-edit.svg" width="20" height="20" alt="edit"></button>
+										</div>
+									</div>
+									<div class="editing__head-info">
+										<div class="editing__name">TON Work</div>
+										<div class="editing__head-text">
+											Изображение должно быть квадратным. <br>
+											Доступные типы PNG, JPEG, SVG, WEBP. <br>
+											Максимальный размер 4 МБ
+										</div>
+									</div>
+									<a class="editing__change-link" href="#">Переключиться на профиль фриланесера</a>
+								</div>
+								<div class="editing__main">
+									<div class="editing__box">
+										<h3 class="editing__box-title">Формат работы на сервисе</h3>
+										<div class="editing__checkboxes">
+											<div class="form__checkbox">
+												<label>
+													<input type="checkbox" name="type" value="1">
+													<span class="form__checkbox-element"></span>
+													<span class="form__checkbox-text">Ищу фрилансера</span>
+												</label>
+											</div>
+											<div class="form__checkbox">
+												<label>
+													<input type="checkbox" name="type" value="2">
+													<span class="form__checkbox-element"></span>
+													<span class="form__checkbox-text">Ищу сотрудника</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="editing__box">
+										<h3 class="editing__box-title">Мои данные</h3>
+										<div class="editing__box-row">
+											<div class="editing__box-col">
+												<div class="editing__item form__item">
+													<label>
+														<span>*Имя</span>
+														<input required type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span>*Фамилия</span>
+														<input required type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<div class="editing__select-wrapper">
+														<span>Дата рождения</span>
+														<div class="editing__selects">
+															<select name="day">
+																<option value="" disabled selected>День</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+															</select>
+															<select name="month">
+																<option value="" disabled selected>Месяц</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+															</select>
+															<select name="year">
+																<option value="" disabled selected>Год</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span>Логин</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span>Пароль</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item editing__item--edit form__item">
+													<label>
+														<span>Telegram</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+													<button class="editing__item-btn" type="button"><img src="img/edit.svg" alt="edit"></button>
+												</div>
+											</div>
+											<div class="editing__box-col editing__box-col--offset">
+												<div class="editing__item form__item">
+													<div class="editing__select-wrapper">
+														<span>*Cтрана</span>
+														<select name="country">
+															<option value="" disabled selected>Placeholder</option>
+															<option value="1">Страна 1</option>
+															<option value="2">Страна 2</option>
+															<option value="3">Страна 3</option>
+														</select>
+													</div>
+												</div>
+												<div class="editing__item form__item">
+													<div class="editing__select-wrapper">
+														<span>*Город</span>
+														<select name="city">
+															<option value="" disabled selected>Placeholder</option>
+															<option value="1">Страна 1</option>
+															<option value="2">Страна 2</option>
+															<option value="3">Страна 3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="editing__box">
+										<h3 class="editing__box-title">Описание</h3>
+										<div class="editing__box-row">
+											<div class="editing__box-col">
+												<div class="editing__item form__item">
+													<label>
+														<span>Название компании</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span>Сайт компаниии</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+											</div>
+											<div class="editing__box-col">
+												<div class="editing__item editing__item--start form__item">
+													<label>
+														<span>О компании</span>
+														<textarea placeholder="placeholder"></textarea>
+													</label>
+													<div class="form__item-textarea-caption">0/500</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="editing__box editing__box--contacts">
+										<h3 class="editing__box-title">Контакты</h3>
+										<div class="editing__box-row">
+											<div class="editing__box-col">
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/github.svg" alt="github">Github</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/discord.svg" alt="github">Discord</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/whatsapp.svg" alt="Whatsapp">Whatsapp</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/behance.svg" alt="behance">Behance</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<div class="editing__item-add">
+														<input class="editing__item-add-name" type="text" placeholder="Введите название">
+														<input class="editing__item-add-value" type="text" placeholder="Placeholder">
+														<button class="editing__item-add-btn" type="button"><img src="img/add-circle.svg" width="20" height="20" alt="add"></button>
+													</div>
+												</div>
+											</div>
+											<div class="editing__box-col">
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/telegram.svg" alt="telegram">Telegram</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/twitter.svg" alt="twitter">Twitter</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/linkedin.svg" alt="Linkedin">Linkedin</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/dribble.svg" alt="dribble">Dribble</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="editing__btn btn btn--primary">Сохранить</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</section>
