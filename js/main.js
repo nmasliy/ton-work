@@ -146,7 +146,27 @@ window.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	function initPortfolioMore() {
+		const $moreBtn = document.querySelector('.editing__portfolio-show');
+		const $portfolio = document.querySelector('.editing__portfolio');
+		const moreText = $moreBtn.dataset.show;
+		const lessText = $moreBtn.dataset.hide;
+
+		if ($moreBtn) {
+			$moreBtn.addEventListener('click', function() {
+				if($portfolio.classList.contains('active')) {
+					$moreBtn.textContent = moreText;
+					$portfolio.classList.remove('active');
+				} else {
+					$moreBtn.textContent = lessText;
+					$portfolio.classList.add('active');
+				}
+			})
+		}
+	}
+
 	initMenu();
 	initCopyProfileLink();
 	initProfileNavigation();
+	initPortfolioMore();
 });

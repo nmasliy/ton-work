@@ -293,6 +293,9 @@
 		border-radius: 10px;
 		min-height: 370px;
 		width: calc(100% / 3 - 20px);
+		&--25 {
+			width: calc(100% / 4 - (90px / 4));
+		}
 	}
 
 	&__title {

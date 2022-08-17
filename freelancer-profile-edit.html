@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TON work</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/libs.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="page">
+			<header class="header header-profile">
+				<div class="container">
+					<div class="header__inner">
+						<a href="#" class="header__logo logo">
+							<img src="img/logo.svg" width="202" height="65" alt="TON work" />
+						</a>
+						<div class="header__menu">
+							<div class="header__menu-inner">
+								<nav class="header__navigation navigation">
+									<ul class="navigation__list">
+										<li>
+											<a href="#"
+												>Мои проекты
+												<img
+													width="20"
+													height="20"
+													src="img/add-circle.svg"
+													alt="add"
+											/></a>
+										</li>
+										<li>
+											<a href="#"
+												>Мои вакансии
+												<img
+													width="20"
+													height="20"
+													src="img/add-circle.svg"
+													alt="add"
+											/></a>
+										</li>
+										<li><a href="#">Соискатели</a></li>
+										<li><a href="#">Фрилансеры</a></li>
+									</ul>
+								</nav>
+								<div class="header__close">&times;</div>
+							</div>
+							<div class="header__profile">
+								<a class="header__notificatitons" href="#"
+									><img
+										src="img/bell.svg"
+										width="20"
+										height="20"
+										alt="notifications"
+								/></a>
+								<a class="header__avatar" href="#"
+									><img
+										src="img/header-avatar.png"
+										width="65"
+										height="65"
+										alt="avatar"
+								/></a>
+							</div>
+							<div class="header__burger">
+								<span></span><span></span><span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page__content pb-0">
+				<section class="editing section">
+					<div class="container">
+						<div class="editing__inner">
+							<form action="#" class="editing__form form">
+								<div class="editing__head">
+									<div class="editing__avatar">
+										<label>
+											<img src="img/profile-photo.jpg" width="160" height="160" alt="avatar">
+											<input type="file" name="profileAvatar">
+										</label>
+										<div class="editing__avatar-buttons">
+											<button class="editing__avatar-btn" type="button"><img src="img/avatar-delete.svg" width="20" height="20" alt="delete"></button>
+											<button class="editing__avatar-btn" type="button"><img src="img/avatar-edit.svg" width="20" height="20" alt="edit"></button>
+										</div>
+									</div>
+									<div class="editing__head-info">
+										<div class="editing__name">Ивашка Иванов</div>
+										<div class="editing__head-text">
+											Изображение должно быть квадратным. <br>
+											Доступные типы PNG, JPEG, SVG, WEBP. <br>
+											Максимальный размер 4 МБ
+										</div>
+									</div>
+									<a class="editing__change-link" href="#">Переключиться на профиль работодателя</a>
+								</div>
+								<div class="editing__main">
+									<div class="editing__box">
+										<h3 class="editing__box-title">Формат работы на сервисе</h3>
+										<div class="editing__checkboxes">
+											<div class="form__checkbox">
+												<label>
+													<input type="checkbox" name="type" value="1">
+													<span class="form__checkbox-element"></span>
+													<span class="form__checkbox-text">Ищу фриланс-проекты</span>
+												</label>
+											</div>
+											<div class="form__checkbox">
+												<label>
+													<input type="checkbox" name="type" value="2">
+													<span class="form__checkbox-element"></span>
+													<span class="form__checkbox-text">Ищу постоянную удалённую работу</span>
+												</label>
+											</div>
+											<div class="form__checkbox">
+												<label>
+													<input type="checkbox" name="type" value="2">
+													<span class="form__checkbox-element"></span>
+													<span class="form__checkbox-text">Ищу работу в офисе</span>
+												</label>
+											</div>
+										</div>
+										<div class="editing__item editing__item--schedule form__item">
+											<div class="editing__select-wrapper">
+												<span>Я принимаю задачи до:</span>
+												<select name="country">
+													<option value="" disabled selected>чч:мм</option>
+													<option value="1">23:00</option>
+													<option value="2">23:00</option>
+													<option value="3">23:00</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="editing__box">
+										<h3 class="editing__box-title">Мои данные</h3>
+										<div class="editing__box-row">
+											<div class="editing__box-col">
+												<div class="editing__item form__item">
+													<label>
+														<span>*Имя</span>
+														<input required type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span>*Фамилия</span>
+														<input required type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<div class="editing__select-wrapper">
+														<span>Дата рождения</span>
+														<div class="editing__selects">
+															<select name="day">
+																<option value="" disabled selected>День</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+															</select>
+															<select name="month">
+																<option value="" disabled selected>Месяц</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+															</select>
+															<select name="year">
+																<option value="" disabled selected>Год</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span>Логин</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span>Пароль</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item editing__item--edit form__item">
+													<label>
+														<span>Telegram</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+													<button class="editing__item-btn" type="button"><img src="img/edit.svg" alt="edit"></button>
+												</div>
+											</div>
+											<div class="editing__box-col editing__box-col--offset">
+												<div class="editing__item form__item">
+													<div class="editing__select-wrapper">
+														<span>*Cтрана</span>
+														<select name="country">
+															<option value="" disabled selected>Placeholder</option>
+															<option value="1">Страна 1</option>
+															<option value="2">Страна 2</option>
+															<option value="3">Страна 3</option>
+														</select>
+													</div>
+												</div>
+												<div class="editing__item form__item">
+													<div class="editing__select-wrapper">
+														<span>*Город</span>
+														<select name="city">
+															<option value="" disabled selected>Placeholder</option>
+															<option value="1">Страна 1</option>
+															<option value="2">Страна 2</option>
+															<option value="3">Страна 3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="editing__box">
+										<h3 class="editing__box-title">Описание</h3>
+										<div class="editing__box-row">
+											<div class="editing__box-col">
+												<div class="editing__item editing__item--start form__item">
+													<label>
+														<span>О компании</span>
+														<textarea placeholder="placeholder"></textarea>
+													</label>
+													<div class="form__item-textarea-caption">0/1000</div>
+												</div>
+											</div>
+											<div class="editing__box-col">
+												<div class="editing__search form__item">
+													<div class="editing__search-title">Сферы деятельности</div>
+													<input type="text" class="editing__search-input" placeholder="Placeholder">
+													<ul class="editing__search-items">
+														<li>Специальность 1</li>
+														<li>Специальность 2</li>
+														<li>Специальность 3</li>
+														<li>Специальность 4</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="editing__box">
+										<div class="editing__porfolio-head">
+											<h4 class="editing__porfolio-title">Портфолио</h4>
+											<button class="editing__portfolio-add btn btn--outline" type="button">Добавить</button>
+										</div>
+										<ul class="editing__portfolio portfolio">
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__img">
+													<img src="img/profile-photo.jpg" width="215" height="100" alt="portfolio image">
+												</div>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__img">
+													<img src="img/profile-photo.jpg" width="215" height="100" alt="portfolio image">
+												</div>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__img">
+													<img src="img/profile-photo.jpg" width="215" height="100" alt="portfolio image">
+												</div>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__img">
+													<img src="img/profile-photo.jpg" width="215" height="100" alt="portfolio image">
+												</div>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+											<li class="portfolio__item portfolio__item--25">
+												<h5 class="profile-box__title portfolio__title"><a href="#">Название работы ограничение 35знаков</a></h5>
+												<h6 class="portfolio__subtitle">Профиль работы</h6>
+												<div class="portfolio__text">Краткое описание работы. Ограничение в 150 знаков.</div>
+											</li>
+										</ul>
+										<button class="editing__portfolio-show btn btn--outline" data-hide="Свернуть" data-show="Показать всё" type="button">Показать всё</button>
+									</div>
+									<div class="editing__box">
+										<h3 class="editing__box-title">Навыки и умения</h3>
+										<div class="editing__box-categories">
+											<div class="editing__box-categories-item">
+												<div class="editing__box-categories-title">Программирование</div>
+												<ul>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="programming" value="1">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">1C</span>
+															</label>
+														</div>
+													</li>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="programming" value="2">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">Blockchain</span>
+															</label>
+														</div>
+													</li>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="programming" value="3">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">C и C++ </span>
+															</label>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="editing__box-categories-item">
+												<div class="editing__box-categories-title">Дизайн и арт</div>
+												<ul>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="design" value="1">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">Банеры</span>
+															</label>
+														</div>
+													</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="design" value="2">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Векторная графика</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="design" value="3">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Визуализация и моделирование</span>
+																</label>
+															</div>
+														</li>
+												</ul>
+											</div>
+											<div class="editing__box-categories-item">
+												<div class="editing__box-categories-title">Услуги</div>
+												<ul>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="services" value="1">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">HTML и CSS верстка</span>
+															</label>
+														</div>
+													</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="services" value="2">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Видеосъемка</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="services" value="3">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Интеграция платежных систем</span>
+																</label>
+															</div>
+														</li>
+												</ul>
+											</div>
+											<div class="editing__box-categories-item">
+												<div class="editing__box-categories-title">Мобильные приложения</div>
+												<ul>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="apps" value="1">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">Гибридные мобильные приложения</span>
+															</label>
+														</div>
+													</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="apps" value="2">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Разработка под Android</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="apps" value="3">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Разработка под IOS (iPhone и iPad)</span>
+																</label>
+															</div>
+														</li>
+												</ul>
+											</div>
+											<div class="editing__box-categories-item">
+												<div class="editing__box-categories-title">Разработка под IOS (iPhone и iPad)</div>
+												<ul>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="admin" value="1">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">DevOps</span>
+															</label>
+														</div>
+													</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="admin" value="2">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">IP-телефония и VoIP</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="admin" value="3">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Linux и  Unix</span>
+																</label>
+															</div>
+														</li>
+												</ul>
+											</div>
+											<div class="editing__box-categories-item">
+												<div class="editing__box-categories-title">Аутсорсинг и консалтинг</div>
+												<ul>
+													<li>
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" name="consult" value="1">
+																<span class="form__checkbox-element"></span>
+																<span class="form__checkbox-text">Бизнес-консультирование</span>
+															</label>
+														</div>
+													</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="consult" value="2">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Бухгалтерские услуги</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="form__checkbox">
+																<label>
+																	<input type="checkbox" name="consult" value="3">
+																	<span class="form__checkbox-element"></span>
+																	<span class="form__checkbox-text">Консалтинг</span>
+																</label>
+															</div>
+														</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="editing__box editing__box--contacts">
+										<h3 class="editing__box-title">Контакты</h3>
+										<div class="editing__box-row">
+											<div class="editing__box-col">
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/github.svg" alt="github">Github</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/discord.svg" alt="github">Discord</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/whatsapp.svg" alt="Whatsapp">Whatsapp</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/behance.svg" alt="behance">Behance</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<div class="editing__item-add">
+														<input class="editing__item-add-name" type="text" placeholder="Введите название">
+														<input class="editing__item-add-value" type="text" placeholder="Placeholder">
+														<button class="editing__item-add-btn" type="button"><img src="img/add-circle.svg" width="20" height="20" alt="add"></button>
+													</div>
+												</div>
+											</div>
+											<div class="editing__box-col">
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/telegram.svg" alt="telegram">Telegram</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/twitter.svg" alt="twitter">Twitter</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/linkedin.svg" alt="Linkedin">Linkedin</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+												<div class="editing__item form__item">
+													<label>
+														<span><img src="img/dribble.svg" alt="dribble">Dribble</span>
+														<input type="text" placeholder="Placeholder">
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="editing__btn btn btn--primary">Сохранить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__col">
+							<h6 class="footer__title">Фриланс</h6>
+							<ul>
+								<li><a href="#">Фриланс-проекты</a></li>
+								<li><a href="#">Работы фрилансеров</a></li>
+								<li><a href="#">Проверка профиля</a></li>
+								<li><a href="#">Конкурсы</a></li>
+								<li><a href="#">Сейф</a></li>
+								<li><a href="#">Бизнес Сейф</a></li>
+								<li><a href="#">Все фрилансеры</a></li>
+								<li><a href="#">Все заказчики</a></li>
+								<li><a href="#">Plus</a></li>
+								<li><a href="#">День фрилансера</a></li>
+								<li><a href="#">Отзывы о фрилансерах</a></li>
+								<li><a href="#">Отзывы о заказчиках</a></li>
+								<li><a href="#">Карта сайта</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h6 class="footer__title">Постоянная работа</h6>
+							<ul>
+								<li><a href="#">Все вакансии</a></li>
+								<li><a href="#">Удаленная работа</a></li>
+								<li><a href="#">О вакансиях</a></li>
+								<li><a href="#">Опубликовать вакансию</a></li>
+								<li><a href="#">Список соискателей</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h6 class="footer__title">Полезная информация</h6>
+							<ul>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Мы в прессе</a></li>
+								<li><a href="#">Идеи и предложения</a></li>
+								<li><a href="#">Опубликовать вакансию</a></li>
+								<li><a href="#">Статистика цен</a></li>
+								<li><a href="#">Партнеры и акции</a></li>
+								<li><a href="#">Регистрация ФЛП</a></li>
+								<li><a href="#">Наша команда</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h6 class="footer__title">Помощь</h6>
+							<ul>
+								<li><a href="#">База знаний</a></li>
+								<li><a href="#">Статьи о фрилансе</a></li>
+							</ul>
+							<div class="divider"></div>
+							<ul>
+								<li><a href="registration.html">Регистрация</a></li>
+								<li><a href="#">Забыли пароль?</a></li>
+								<li><a href="#">Написать Команде заботы о клиентах</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="overlay"></div>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
