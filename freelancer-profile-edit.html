@@ -256,7 +256,7 @@
 									<div class="editing__box">
 										<div class="editing__porfolio-head">
 											<h4 class="editing__porfolio-title">Портфолио</h4>
-											<button class="editing__portfolio-add btn btn--outline" type="button">Добавить</button>
+											<button data-micromodal-trigger="modal-add" class="editing__portfolio-add btn btn--outline" type="button">Добавить</button>
 										</div>
 										<ul class="editing__portfolio portfolio">
 											<li class="portfolio__item portfolio__item--25">
@@ -582,6 +582,105 @@
 					</div>
 				</section>
 			</main>
+			<div class="modal modal-add micromodal-slide" id="modal-add">
+				<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+					<div class="modal__container">
+						<div class="modal__inner">
+							<div class="modal__content">
+								<h5 class="modal__title">Добавление портфолио</h5>
+								<form action="#" class="modal-add__form">
+									<div class="modal-add__main">
+										<div class="modal-add__col">
+											<div class="form__item">
+												<label>
+													<span>Название проекта</span>
+													<input  type="text" placeholder="Placeholder">
+												</label>
+											</div>
+											<div class="form__item">
+												<label>
+													<span>Категория проекта</span>
+													<select name="category">
+														<option value="1" disabled selected>Placeholder</option>
+														<option value="2">Placeholder</option>
+														<option value="3">Placeholder</option>
+														<option value="4">Placeholder</option>
+													</select>
+												</label>
+											</div>
+											<div class="form__item">
+												<label>
+													<span>Ссылка на проект</span>
+													<input type="text" placeholder="Placeholder">
+												</label>
+											</div>
+										</div>
+										<div class="modal-add__col">
+											<div class="form__item">
+												<label>
+													<span>Описание проекта</span>
+													<textarea placeholder="placeholder"></textarea>
+												</label>
+												<div class="form__item-textarea-caption">0/1000</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-add__images">
+										<div class="modal-add__images-title">
+											<img src="img/add-circle.svg" width="20" height="20" alt="add">
+											Добавить изображение
+										</div>
+										<ul class="modal-add__images-list">
+											<li class="modal-add__images-item">
+												<label>
+													<input type="file">
+													<img src="img/profile-photo.jpg" width="160" height="160" alt="img">
+												</label>
+												<button class="modal-add__delete" type="button"><img src="img/trash.svg" width="15" height="15" alt="delete image"></button>
+											</li>
+											<li class="modal-add__images-item">
+												<label>
+													<input type="file">
+												</label>
+												<button class="modal-add__delete" type="button"><img src="img/trash.svg" width="15" height="15" alt="delete image"></button>
+											</li>
+											<li class="modal-add__images-item">
+												<label>
+													<input type="file">
+												</label>
+												<button class="modal-add__delete" type="button"><img src="img/trash.svg" width="15" height="15" alt="delete image"></button>
+											</li>
+											<li class="modal-add__images-item">
+												<label>
+													<input type="file">
+												</label>
+												<button class="modal-add__delete" type="button"><img src="img/trash.svg" width="15" height="15" alt="delete image"></button>
+											</li>
+										</ul>
+									</div>
+									<div class="modal-add__btn-wrapper">
+										<button class="modal-add__btn btn btn--outline">Сохранить</button>
+									</div>
+								</form>
+								<button
+										type="button"
+										class="modal__close"
+										data-micromodal-close
+										aria-label="Close this dialog window"
+									>
+										<img
+											data-micromodal-close
+											src="img/close.svg"
+											width="20"
+											height="20"
+											alt="close"
+										/>
+									</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<footer class="footer">
 				<div class="container">
 					<div class="footer__inner">
@@ -645,6 +744,7 @@
 			<div class="overlay"></div>
 		</div>
 
+		<script src="js/micromodal.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

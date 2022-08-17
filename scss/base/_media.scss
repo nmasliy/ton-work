@@ -36,6 +36,11 @@
 			width: calc(50% - 40px);
 		}
 	}
+	.modal {
+		&__inner {
+			padding: 30px;
+		}
+	}
 	.card {
 		&__title {
 			font-size: 16px;
@@ -525,6 +530,18 @@
 	}
 	.btn {
 		flex-grow: 1;
+	}
+	.modal-add {
+		&__col {
+			width: 100%;
+		}
+		&__images-item label {
+			width: 100px;
+			height: 100px;
+		}
+		&__images-list {
+			gap: 10px;
+		}
 	}
 	.editing {
 		&__box-col .editing__item span {

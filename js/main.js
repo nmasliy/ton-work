@@ -149,10 +149,10 @@ window.addEventListener("DOMContentLoaded", function () {
 	function initPortfolioMore() {
 		const $moreBtn = document.querySelector('.editing__portfolio-show');
 		const $portfolio = document.querySelector('.editing__portfolio');
-		const moreText = $moreBtn.dataset.show;
-		const lessText = $moreBtn.dataset.hide;
-
+		
 		if ($moreBtn) {
+			const moreText = $moreBtn.dataset.show;
+			const lessText = $moreBtn.dataset.hide;
 			$moreBtn.addEventListener('click', function() {
 				if($portfolio.classList.contains('active')) {
 					$moreBtn.textContent = moreText;
@@ -165,8 +165,21 @@ window.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	function initModals() {
+		const $modals = document.querySelectorAll('.modal');
+		
+		if ($modals.length > 0) {
+			MicroModal.init({
+				disableScroll: true,
+				awaitOpenAnimation: true, 
+				awaitCloseAnimation: true, 
+			});
+		}
+	}
+
 	initMenu();
 	initCopyProfileLink();
 	initProfileNavigation();
 	initPortfolioMore();
+	initModals();
 });
