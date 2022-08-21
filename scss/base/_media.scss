@@ -267,6 +267,25 @@
 			margin-bottom: 15px;
 		}
 	}
+	.catalog {
+		&__inner {
+			display: block;
+		}
+		&__content {
+			margin-top: 30px;
+		}
+		&__items {
+			max-height: none;
+			overflow: visible;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	.filter {
+		&__title {
+			margin-bottom: 25px;
+		}
+	}
 	.editing {
 		&__item-add {
 			.editing__item-add-name {
@@ -541,6 +560,31 @@
 		}
 		&__images-list {
 			gap: 10px;
+		}
+	}
+	.catalog {
+		&__form {
+			grid-template-columns: 1fr;
+		}
+	}
+	.catalog-item {
+		&__inner {
+			flex-direction: column;
+		}
+		&__rating {
+			justify-content: center;
+			margin-bottom: 0;
+			margin-right: 10px;
+		}
+		&__left {
+			margin-bottom: 10px;
+		}
+		&__right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-left: 0;
 		}
 	}
 	.editing {

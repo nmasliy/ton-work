@@ -177,9 +177,23 @@ window.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	function initFilter() {
+		const $filter = document.querySelector('.filter');
+
+		if ($filter) {
+			$filter.addEventListener('click', function(e) {
+				const $item = e.target;
+				if ($item.classList.contains('filter__name')) {
+					$item.closest('.filter__item').classList.toggle('active');
+				}
+			})
+		}
+	}
+	
 	initMenu();
 	initCopyProfileLink();
 	initProfileNavigation();
 	initPortfolioMore();
 	initModals();
+	initFilter();
 });
