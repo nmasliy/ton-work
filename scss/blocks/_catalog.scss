@@ -19,18 +19,8 @@
 		}
 	}
 
-
 	&__items {
-		max-height: calc(100vh - 300px);
-		min-height: 300px;
-		overflow: auto;
-		padding: 15px;
-		margin: -15px;
 		padding-bottom: 55px;
-
-		&--single {
-			max-width: 778px;
-		}
 	}
 
 	&__item {
