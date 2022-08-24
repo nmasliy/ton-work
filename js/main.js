@@ -189,6 +189,43 @@ window.addEventListener("DOMContentLoaded", function () {
 			})
 		}
 	}
+
+	
+	function initSelects() {
+		$selects = document.querySelectorAll('.app-select')
+
+		if ($selects.length > 0) {
+			$selects.forEach(select => {
+				initSelect(select)
+			})
+		}
+
+		function initSelect($select) {
+			const $current = $select.querySelector('.app-select__current')
+			const $currentValue = $current.querySelector('.app-select__value')
+
+			document.body.addEventListener('click', function (e) {
+				const $currentSelect = e.target.closest(`#${$select.id}`)
+
+				if ($currentSelect && !$select.classList.contains('active')) {
+					// Клик по закрытому селекту
+					$select.classList.add('active')
+				} else if (
+					$currentSelect &&
+					e.target.closest('.app-select__option')
+				) {
+					// Клик по опции, когда селект открыт
+					const option = e.target.closest('.app-select__option')
+					$currentValue.textContent = option.textContent
+					$currentValue.dataset.value = option.dataset.value
+					$select.classList.remove('active')
+				} else {
+					// Клик мимо селекта
+					$select.classList.remove('active')
+				}
+			})
+		}
+	}
 	
 	initMenu();
 	initCopyProfileLink();
@@ -196,4 +233,5 @@ window.addEventListener("DOMContentLoaded", function () {
 	initPortfolioMore();
 	initModals();
 	initFilter();
+	initSelects();
 });

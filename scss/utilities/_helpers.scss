@@ -17,6 +17,7 @@
 	}
 }
 // /Block scroll for Safari
+
 .page {
 	.p-0 {
 		padding: 0;
@@ -33,13 +34,25 @@
 	.pl-95 {
 		padding-left: 95px;
 	}
+	.mt-40 {
+		margin-top: 40px;
+	}
 	.mb-30 {
 		margin-bottom: 30px;
+	}
+	.mb-45 {
+		margin-bottom: 45px;
 	}
 	.mb-55 {
 		margin-bottom: 55px;
 	}
 	.flex-start {
 		align-items: flex-start;
+	}
+	.w-auto {
+		width: auto;
+	}
+	.t-center {
+		text-align: center;
 	}
 }
