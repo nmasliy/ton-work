@@ -114,7 +114,7 @@
 									<li><img width="20" height="20" src="img/eye.svg" alt=""><span>90 просмотров</span></li>
 								</ul>
 							</div>
-							<a class="btn btn--outline btn--flex btn--disabled" href="#">
+							<a class="project__aside-btn btn btn--outline btn--flex btn--disabled" href="#">
 								<span>Написать</span>
 								<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd"
@@ -449,28 +449,33 @@
 				<div class="modal__container">
 					<div class="modal__inner">
 						<div class="modal__content">
-							<h5 class="modal__title">Обновить данные в проекте</h5>
+							<h5 class="modal__title">Оставить ставку</h5>
 							<form action="#" class="modal-update__form form">
-								<div class="form__item form__item--row mb-65">
-									<div class="form__item-title">Изменить стоимость</div>
+								<div class="form__item form__item--row mb-45">
+									<div class="form__item-title">*Стоимость</div>
 									<div class="form__item-content form__item-content--row">
-										<input type="number" value="100500">
+										<input type="number" value="100500" placeholder="0">
 										<div class="form__item-currency">₽</div>
 									</div>
 								</div>
-								<div class="form__item form__item--row">
-									<div class="form__item-title">Описание</div>
+								<div class="form__item form__item--row mb-40">
+									<div class="form__item-title">*Срок выполнения</div>
 									<div class="form__item-content">
-										<textarea
-											placeholder="placeholder">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem libero tempore vel dolores, magni voluptates atque laboriosam? Exercitationem sapiente necessitatibus illum quisquam voluptate obcaecati, rem, possimus error officiis, cum reiciendis.</textarea>
+										<input class="form__input-small" type="text" value="408" placeholder="placeholder">
+										<div class="form__caption">Время на выполнение проекта в днях</div>
+									</div>
+								</div>
+								<div class="form__item form__item--row">
+									<div class="form__item-title">*Комментарий</div>
+									<div class="form__item-content">
+										<textarea placeholder="placeholder">Уже договорились, здесь можно обновить ставку</textarea>
 										<div class="modal-update__row">
-											<div class="form__item-helper">Helper Text</div>
 											<div class="form__item-textarea-caption">0/1000</div>
 										</div>
 									</div>
 								</div>
-								<div class="t-center">
-									<button class="modal-update__btn btn btn--primary">Обновить проект</button>
+								<div class="modal-update__btn-wrapper">
+									<button class="modal-update__btn btn btn--primary">Отправить ставку</button>
 								</div>
 							</form>
 							<button type="button" class="modal__close" data-micromodal-close aria-label="Close this dialog window">

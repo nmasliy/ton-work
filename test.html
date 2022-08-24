@@ -69,7 +69,8 @@
 		<h3><a href="catalog-projects.html">Каталог заказов</a></h3>
 		<h3><a href="project-freelancer.html">Экран проекта для фрилансера</a></h3>
 		<h3><a href="project-freelancer-bet.html">Ставка сделана для фрилансера</a></h3>
-		<h3><a href="project-freelancer-win.html">Выполнение проекта для фрилансера</a></h3>
+		<h3><a href="project-freelancer-bet-win.html">Выполнение проекта для фрилансера</a></h3>
+		<h3><a href="#" data-micromodal-trigger="modal-review">Оставить отзыв</a></h3>
 		<hr>
 		<h3><a href="catalog-vacancies.html">Каталог вакансий</a></h3>
 		<h3><a href="create-vacancy.html">Публикация вакансии</a></h3>
@@ -113,52 +114,139 @@
 				</div>
 			</div>
 		</div>
-			<div class="modal modal-update micromodal-slide" id="modal-update-2">
-				<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-					<div class="modal__container">
-						<div class="modal__inner">
-							<div class="modal__content">
-								<h5 class="modal__title">Обновить ставку</h5>
-								<form action="#" class="modal-update__form form">
-									<div class="form__item form__item--row mb-45">
-										<div class="form__item-title">*Стоимость</div>
-										<div class="form__item-content form__item-content--row">
-											<input type="number" value="100500" placeholder="0">
-											<div class="form__item-currency">₽</div>
+		<div class="modal modal-update micromodal-slide" id="modal-update-2">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container">
+					<div class="modal__inner">
+						<div class="modal__content">
+							<h5 class="modal__title">Обновить ставку</h5>
+							<form action="#" class="modal-update__form form">
+								<div class="form__item form__item--row mb-45">
+									<div class="form__item-title">*Стоимость</div>
+									<div class="form__item-content form__item-content--row">
+										<input type="number" value="100500" placeholder="0">
+										<div class="form__item-currency">₽</div>
+									</div>
+								</div>
+								<div class="form__item form__item--row mb-40">
+									<div class="form__item-title">*Срок выполнения</div>
+									<div class="form__item-content">
+										<input class="form__input-small" type="text" value="408" placeholder="placeholder">
+										<div class="form__caption">Время на выполнение проекта в днях</div>
+									</div>
+								</div>
+								<div class="form__item form__item--row">
+									<div class="form__item-title">*Комментарий</div>
+									<div class="form__item-content">
+										<textarea placeholder="placeholder">Уже договорились, здесь можно обновить ставку</textarea>
+										<div class="modal-update__row">
+											<div class="form__item-helper">Helper Text</div>
+											<div class="form__item-textarea-caption">0/1000</div>
 										</div>
 									</div>
-									<div class="form__item form__item--row mb-40">
-										<div class="form__item-title">*Срок выполнения</div>
-										<div class="form__item-content">
-											<input class="form__input-small" type="text" value="408" placeholder="placeholder">
-											<div class="form__caption">Время на выполнение проекта в днях</div>
-										</div>
-									</div>
-									<div class="form__item form__item--row">
-										<div class="form__item-title">*Комментарий</div>
-										<div class="form__item-content">
-											<textarea
-												placeholder="placeholder">Уже договорились, здесь можно обновить ставку</textarea>
-											<div class="modal-update__row">
-												<div class="form__item-helper">Helper Text</div>
-												<div class="form__item-textarea-caption">0/1000</div>
-											</div>
-										</div>
-									</div>
-									<div class="modal-update__btn-wrapper">
-										<button class="modal-update__btn btn btn--primary">Обновить ставку</button>
-									</div>
-								</form>
-								<button type="button" class="modal__close" data-micromodal-close aria-label="Close this dialog window">
-									<img data-micromodal-close src="img/close.svg" width="20" height="20" alt="close" />
-								</button>
-							</div>
+								</div>
+								<div class="modal-update__btn-wrapper">
+									<button class="modal-update__btn btn btn--primary">Обновить ставку</button>
+								</div>
+							</form>
+							<button type="button" class="modal__close" data-micromodal-close aria-label="Close this dialog window">
+								<img data-micromodal-close src="img/close.svg" width="20" height="20" alt="close" />
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="modal modal-review modal-finish micromodal-slide" id="modal-review">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container">
+					<div class="modal__inner">
+						<div class="modal__content">
+							<div class="modal-finish__review">
+								<h5 class="modal__title">Оставить отзыв</h5>
+								<form action="#" class="modal-finish__form">
+									<div class="form__item form__item--row modal-finish__review-inner">
+										<div class="modal-finish__row">
+											<div class="form__item-title">*Комментарий</div>
+											<div class="form__item-content">
+												<textarea placeholder="placeholder"></textarea>
+												<div class="form__item-textarea-caption">0/1000</div>
+											</div>
+										</div>
+										<div class="modal-finish__rating form__rating">
+											<div class="form__rating-item">
+												<div class="form__rating-name">Качество</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Профессионализм</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Стоимость</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Сроки</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Общение</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="t-center">
+										<button class="modal-finish__btn-primary btn btn--primary" type="button">Отправить отзыв</button>
+									</div>
+								</form>
+							</div>
+							<button type="button" class="modal__close" data-micromodal-close aria-label="Close this dialog window">
+								<img data-micromodal-close src="img/close.svg" width="20" height="20" alt="close" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
+<script src="js/star-rating.min.js"></script>
 <script src="js/micromodal.min.js"></script>
 <script src="js/main.js"></script>
 

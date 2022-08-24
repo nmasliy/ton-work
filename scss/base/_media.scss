@@ -404,6 +404,17 @@
 	.project__tabs li {
 		width: 140px;
 	}
+	.project {
+		&__aside-btn {
+			width: auto;
+			svg, img {
+				margin-left: 18px;
+			}
+		}
+	}
+	.modal__title {
+		margin-bottom: 30px;
+	}
 	.profile {
 		&__inner {
 			flex-wrap: wrap;

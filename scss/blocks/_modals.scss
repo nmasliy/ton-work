@@ -216,6 +216,23 @@
 	}
 }
 
+
+.modal-review {
+	.modal__inner {
+			padding: 30px 95px 50px;
+		}
+		.modal__container {
+			max-width: 1140px;
+		}
+		.modal-finish__request {
+			display: none;
+		}
+		.modal-finish__review {
+			display: block;
+		}
+}
+
+
 /**************************\
     Demo Animation Style
 \**************************/
