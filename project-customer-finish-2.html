@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TON work</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;500;600&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/libs.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="page">
+		<header class="header header-profile">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo logo">
+						<img src="img/logo.svg" width="202" height="65" alt="TON work" />
+					</a>
+					<div class="header__menu">
+						<div class="header__menu-inner">
+							<nav class="header__navigation navigation">
+								<ul class="navigation__list">
+									<li>
+										<a href="#">Мои проекты
+											<img width="20" height="20" src="img/add-circle.svg" alt="add" /></a>
+									</li>
+									<li>
+										<a href="#">Мои вакансии
+											<img width="20" height="20" src="img/add-circle.svg" alt="add" /></a>
+									</li>
+									<li><a href="#">Соискатели</a></li>
+									<li><a href="#">Фрилансеры</a></li>
+								</ul>
+							</nav>
+							<div class="header__close">&times;</div>
+						</div>
+						<div class="header__profile">
+							<a class="header__notificatitons" href="#"><img src="img/bell.svg" width="20" height="20"
+									alt="notifications" /></a>
+							<a class="header__avatar" href="#"><img src="img/header-avatar.png" width="65" height="65"
+									alt="avatar" /></a>
+						</div>
+						<div class="header__burger">
+							<span></span><span></span><span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page__content pb-60">
+			<section class="project">
+				<div class="container">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог проектов</a></li>
+							<li><a href="#">Просмотр проекта</a></li>
+						</ul>
+					</div>
+					<div class="project__top">
+						<div class="project__head">
+							<h3 class="project__title title">Разработка фуфелки</h3>
+							<ul class="project__tags">
+								<li>Разработка</li>
+								<li>Веб-программирование</li>
+							</ul>
+						</div>
+						<div class="project__price">100500 ₽</div>
+					</div>
+					<div class="project__progress project-progress">
+						<ul>
+							<li class="done">Публикация</li>
+							<li class="done">Прием ставок</li>
+							<li class="done">Утверждение условий</li>
+							<li class="done">Выполнение проекта</li>
+							<li class="done">Обмен отзывами</li>
+						</ul>
+					</div>
+					<div class="project__inner">
+						<aside class="project__aside">
+							<div class="project__customer project-customer">
+								<div class="project-customer__title">Заказчик</div>
+								<div class="project-customer__inner">
+									<div class="project-customer__img">
+										<img width="45" height="45" src="img/avatar.svg" alt="">
+									</div>
+									<div class="project-customer__info">
+										<div class="project-customer__name">Потрокол Потроклов</div>
+										<div class="project-customer__location">Россия, Москва</div>
+										<div class="project-customer__rating">
+											<div class="project-customer__rating-item">
+												<img width="20" height="20" src="img/like.svg" alt="">
+												<span>21</span>
+											</div>
+											<div class="project-customer__rating-item">
+												<img width="20" height="20" src="img/dislike.svg" alt="">
+												<span>0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="project__aside-title">Управление проектом</div>
+							<a class="project__link btn btn--underline" href="#"><span>Возобновить проект</span></a>
+							<div class="project__aside-title">Проект опубликован</div>
+							<div class="project__info">
+								<ul>
+									<li><img width="20" height="20" src="img/calendar.svg" alt=""><span>15 дней назад</span></li>
+									<li><img width="20" height="20" src="img/eye.svg" alt=""><span>90 просмотров</span></li>
+								</ul>
+							</div>
+						</aside>
+						<div class="project__content">
+							<div class="project__description">
+								<p>Тут описание проекта. Берем из создания проекта)</p>
+							</div>
+							<div class="project__buttons">
+								<a class="project__btn btn btn--outline btn--sm" href="#"
+									data-micromodal-trigger="modal-finish">Опубликовать похожий проект</a>
+							</div>
+							<div class="project__review project-review">
+								<div class="project-review__row">
+									<div class="project-review__col">
+										<div class="project-review__title">Отзыв заказчика</div>
+										<div class="project-review__text">Было приятно сотрудничать. Иван хорошо ориентируется в сфере,
+											четко ставит
+											задачи и нормально отвечает на вопросы. Рекомендую к сотрудничеству</div>
+										<div class="project-review__footer">
+											<div class="project-review__avatar">
+												<img width="40" height="40" src="img/avatar.svg" alt="">
+											</div>
+											<div class="project-review__name">Потрокол К.</div>
+											<a class="project-review__link" href="#">Ответный отзыв</a>
+										</div>
+									</div>
+									<div class="project-review__col">
+										<div class="project-review__rating form__rating">
+											<div class="form__rating-item">
+												<div class="form__rating-name">Качество</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star-empty.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Профессионализм</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star-empty.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Стоимость</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star-empty.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Сроки</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star-empty.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Общение</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star-empty.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="project-review__row">
+									<div class="project-review__col project-review__answer">
+										<div class="project-review__answer-title title">Ответ фрилансера</div>
+										<div class="project-review__text">Было приятно сотрудничать. Иван хорошо ориентируется в сфере,
+											четко ставит
+											задачи и нормально отвечает на вопросы.
+											Рекомендую к сотрудничеству dssgerer gfsdvskvsl kdvsmkvskd kdkgskgs;f;s laksflsk;sd lskdlfks
+											sjekfskvs kefksjfvls
+											dsleklskg jsgjskdv skjksjdvsg kjd</div>
+										<div class="project-review__footer">
+											<div class="project-review__avatar">
+												<img width="40" height="40" src="img/avatar.svg" alt="">
+											</div>
+											<div class="project-review__name">Ивашка И.</div>
+										</div>
+									</div>
+									<div class="project-review__col">
+										<div class="project-review__rating form__rating">
+											<div class="form__rating-item">
+												<div class="form__rating-name">Оплата</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Общение</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Постановка задачи</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Четкость требований</div>
+												<ul>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+													<li><img src="img/star.svg" width="25" height="25" alt=""></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="project__tabs mb-10">
+								<ul>
+									<li data-tab-title data-tab="1" class="active">Ставки <span>10</span></li>
+									<li data-tab-title data-tab="2">Отклоненные <span>10</span></li>
+								</ul>
+							</div>
+							<div class="project__items">
+								<ul class="project__tab-content active" data-tab-content data-tab="1">
+									<li class="bid bid--win">
+										<div class="bid__col">
+											<div class="bid__head">
+												<div class="bid__avatar">
+													<img width="65" height="65" src="img/avatar.svg" alt="">
+												</div>
+												<div class="bid__author">
+													<div class="bid__name">Кларк кент</div>
+													<div class="bid__rating">
+														<span>1234</span>
+														<img width="20" height="20" src="img/star.svg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="bid__text">
+												Здесь текст типа “Добрый день! выполню ваш проект и бла бла бла”
+											</div>
+											<div class="bid__buttons">
+												<a class="btn btn--underline" href="#"><span>Отменить ставку</span></a>
+												<a class="btn btn--underline" href="#"><span>Выбрать исполнителем</span></a>
+											</div>
+										</div>
+										<div class="bid__col">
+											<ul class="bid__tags tags">
+												<li>Сделаю за 5 дней</li>
+												<li>7000 Р</li>
+											</ul>
+											<a class="bid__btn btn btn--outline btn--flex-sm" href="#">
+												<span>Написать</span>
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M18.3333 10.0003C18.3333 14.6027 14.6023 18.3337 9.99996 18.3337C5.39759 18.3337 1.66663 14.6027 1.66663 10.0003C1.66663 5.39795 5.39759 1.66699 9.99996 1.66699C14.6023 1.66699 18.3333 5.39795 18.3333 10.0003ZM10.2986 7.81904C9.48803 8.15617 7.86809 8.85394 5.43876 9.91237C5.04427 10.0692 4.83762 10.2227 4.81881 10.3728C4.78702 10.6264 5.10461 10.7262 5.53708 10.8622C5.5959 10.8807 5.65686 10.8999 5.71935 10.9202C6.14483 11.0585 6.71718 11.2203 7.01473 11.2268C7.28463 11.2326 7.58587 11.1213 7.91844 10.8929C10.1882 9.36075 11.3599 8.58632 11.4335 8.56962C11.4854 8.55784 11.5573 8.54303 11.606 8.58634C11.6548 8.62965 11.65 8.71167 11.6448 8.73367C11.6133 8.8678 10.3667 10.0268 9.72156 10.6266C9.52044 10.8136 9.37777 10.9462 9.34861 10.9765C9.28328 11.0443 9.2167 11.1085 9.15271 11.1702C8.75742 11.5513 8.46099 11.837 9.16912 12.3037C9.50941 12.5279 9.78171 12.7134 10.0534 12.8983C10.3501 13.1004 10.646 13.3019 11.0288 13.5529C11.1264 13.6168 11.2195 13.6832 11.3103 13.7479C11.6555 13.9941 11.9657 14.2152 12.349 14.1799C12.5716 14.1595 12.8017 13.9501 12.9185 13.3256C13.1945 11.8497 13.7372 8.65204 13.8626 7.33434C13.8736 7.2189 13.8598 7.07115 13.8487 7.00629C13.8376 6.94143 13.8144 6.84902 13.7301 6.78061C13.6302 6.6996 13.4761 6.68251 13.4071 6.68372C13.0937 6.68925 12.6128 6.85646 10.2986 7.81904Z"
+														fill="#044407" />
+												</svg>
+											</a>
+											<div class="bid__date">16 сентября, 22:00</div>
+										</div>
+									</li>
+									<li class="bid bid--loose">
+										<div class="bid__col">
+											<div class="bid__head">
+												<div class="bid__avatar">
+													<img width="65" height="65" src="img/avatar.svg" alt="">
+												</div>
+												<div class="bid__author">
+													<div class="bid__name">Кларк кент</div>
+													<div class="bid__rating">
+														<span>1234</span>
+														<img width="20" height="20" src="img/star.svg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="bid__text">
+												Здесь текст типа “Добрый день! выполню ваш проект и бла бла бла”
+											</div>
+											<div class="bid__buttons">
+												<a class="btn btn--underline" href="#"><span>Отменить ставку</span></a>
+												<a class="btn btn--underline" href="#"><span>Выбрать исполнителем</span></a>
+											</div>
+										</div>
+										<div class="bid__col">
+											<ul class="bid__tags tags">
+												<li>Сделаю за 5 дней</li>
+												<li>7000 Р</li>
+											</ul>
+											<a class="bid__btn btn btn--outline btn--flex-sm" href="#">
+												<span>Написать</span>
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M18.3333 10.0003C18.3333 14.6027 14.6023 18.3337 9.99996 18.3337C5.39759 18.3337 1.66663 14.6027 1.66663 10.0003C1.66663 5.39795 5.39759 1.66699 9.99996 1.66699C14.6023 1.66699 18.3333 5.39795 18.3333 10.0003ZM10.2986 7.81904C9.48803 8.15617 7.86809 8.85394 5.43876 9.91237C5.04427 10.0692 4.83762 10.2227 4.81881 10.3728C4.78702 10.6264 5.10461 10.7262 5.53708 10.8622C5.5959 10.8807 5.65686 10.8999 5.71935 10.9202C6.14483 11.0585 6.71718 11.2203 7.01473 11.2268C7.28463 11.2326 7.58587 11.1213 7.91844 10.8929C10.1882 9.36075 11.3599 8.58632 11.4335 8.56962C11.4854 8.55784 11.5573 8.54303 11.606 8.58634C11.6548 8.62965 11.65 8.71167 11.6448 8.73367C11.6133 8.8678 10.3667 10.0268 9.72156 10.6266C9.52044 10.8136 9.37777 10.9462 9.34861 10.9765C9.28328 11.0443 9.2167 11.1085 9.15271 11.1702C8.75742 11.5513 8.46099 11.837 9.16912 12.3037C9.50941 12.5279 9.78171 12.7134 10.0534 12.8983C10.3501 13.1004 10.646 13.3019 11.0288 13.5529C11.1264 13.6168 11.2195 13.6832 11.3103 13.7479C11.6555 13.9941 11.9657 14.2152 12.349 14.1799C12.5716 14.1595 12.8017 13.9501 12.9185 13.3256C13.1945 11.8497 13.7372 8.65204 13.8626 7.33434C13.8736 7.2189 13.8598 7.07115 13.8487 7.00629C13.8376 6.94143 13.8144 6.84902 13.7301 6.78061C13.6302 6.6996 13.4761 6.68251 13.4071 6.68372C13.0937 6.68925 12.6128 6.85646 10.2986 7.81904Z"
+														fill="#044407" />
+												</svg>
+											</a>
+											<div class="bid__date">16 сентября, 22:00</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="project__tab-content" data-tab-content data-tab="2">
+									<li class="bid bid--loose">
+										<div class="bid__col">
+											<div class="bid__head">
+												<div class="bid__avatar">
+													<img width="65" height="65" src="img/avatar.svg" alt="">
+												</div>
+												<div class="bid__author">
+													<div class="bid__name">Кларк кент</div>
+													<div class="bid__rating">
+														<span>1234</span>
+														<img width="20" height="20" src="img/star.svg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="bid__text">
+												Здесь текст типа “Добрый день! выполню ваш проект и бла бла бла”
+											</div>
+											<div class="bid__buttons">
+												<a class="btn btn--underline" href="#"><span>Отменить ставку</span></a>
+												<a class="btn btn--underline" href="#"><span>Выбрать исполнителем</span></a>
+											</div>
+										</div>
+										<div class="bid__col">
+											<ul class="bid__tags tags">
+												<li>Сделаю за 5 дней</li>
+												<li>7000 Р</li>
+											</ul>
+											<a class="bid__btn btn btn--outline btn--flex-sm" href="#">
+												<span>Написать</span>
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M18.3333 10.0003C18.3333 14.6027 14.6023 18.3337 9.99996 18.3337C5.39759 18.3337 1.66663 14.6027 1.66663 10.0003C1.66663 5.39795 5.39759 1.66699 9.99996 1.66699C14.6023 1.66699 18.3333 5.39795 18.3333 10.0003ZM10.2986 7.81904C9.48803 8.15617 7.86809 8.85394 5.43876 9.91237C5.04427 10.0692 4.83762 10.2227 4.81881 10.3728C4.78702 10.6264 5.10461 10.7262 5.53708 10.8622C5.5959 10.8807 5.65686 10.8999 5.71935 10.9202C6.14483 11.0585 6.71718 11.2203 7.01473 11.2268C7.28463 11.2326 7.58587 11.1213 7.91844 10.8929C10.1882 9.36075 11.3599 8.58632 11.4335 8.56962C11.4854 8.55784 11.5573 8.54303 11.606 8.58634C11.6548 8.62965 11.65 8.71167 11.6448 8.73367C11.6133 8.8678 10.3667 10.0268 9.72156 10.6266C9.52044 10.8136 9.37777 10.9462 9.34861 10.9765C9.28328 11.0443 9.2167 11.1085 9.15271 11.1702C8.75742 11.5513 8.46099 11.837 9.16912 12.3037C9.50941 12.5279 9.78171 12.7134 10.0534 12.8983C10.3501 13.1004 10.646 13.3019 11.0288 13.5529C11.1264 13.6168 11.2195 13.6832 11.3103 13.7479C11.6555 13.9941 11.9657 14.2152 12.349 14.1799C12.5716 14.1595 12.8017 13.9501 12.9185 13.3256C13.1945 11.8497 13.7372 8.65204 13.8626 7.33434C13.8736 7.2189 13.8598 7.07115 13.8487 7.00629C13.8376 6.94143 13.8144 6.84902 13.7301 6.78061C13.6302 6.6996 13.4761 6.68251 13.4071 6.68372C13.0937 6.68925 12.6128 6.85646 10.2986 7.81904Z"
+														fill="#044407" />
+												</svg>
+											</a>
+											<div class="bid__date">16 сентября, 22:00</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__col">
+						<h6 class="footer__title">Фриланс</h6>
+						<ul>
+							<li><a href="#">Фриланс-проекты</a></li>
+							<li><a href="#">Работы фрилансеров</a></li>
+							<li><a href="#">Проверка профиля</a></li>
+							<li><a href="#">Конкурсы</a></li>
+							<li><a href="#">Сейф</a></li>
+							<li><a href="#">Бизнес Сейф</a></li>
+							<li><a href="#">Все фрилансеры</a></li>
+							<li><a href="#">Все заказчики</a></li>
+							<li><a href="#">Plus</a></li>
+							<li><a href="#">День фрилансера</a></li>
+							<li><a href="#">Отзывы о фрилансерах</a></li>
+							<li><a href="#">Отзывы о заказчиках</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="footer__title">Постоянная работа</h6>
+						<ul>
+							<li><a href="#">Все вакансии</a></li>
+							<li><a href="#">Удаленная работа</a></li>
+							<li><a href="#">О вакансиях</a></li>
+							<li><a href="#">Опубликовать вакансию</a></li>
+							<li><a href="#">Список соискателей</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="footer__title">Полезная информация</h6>
+						<ul>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Мы в прессе</a></li>
+							<li><a href="#">Идеи и предложения</a></li>
+							<li><a href="#">Опубликовать вакансию</a></li>
+							<li><a href="#">Статистика цен</a></li>
+							<li><a href="#">Партнеры и акции</a></li>
+							<li><a href="#">Регистрация ФЛП</a></li>
+							<li><a href="#">Наша команда</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="footer__title">Помощь</h6>
+						<ul>
+							<li><a href="#">База знаний</a></li>
+							<li><a href="#">Статьи о фрилансе</a></li>
+						</ul>
+						<div class="divider"></div>
+						<ul>
+							<li><a href="registration.html">Регистрация</a></li>
+							<li><a href="#">Забыли пароль?</a></li>
+							<li><a href="#">Написать Команде заботы о клиентах</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay"></div>
+		<div class="modal modal-finish micromodal-slide" id="modal-finish">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container">
+					<div class="modal__inner">
+						<div class="modal__content">
+							<div class="modal-finish__request">
+								<h5 class="modal__title">Завершение проекта</h5>
+								<form action="#" class="modal-finish__form">
+									<div class="modal-finish__text">Вы уверены, что хотите завершить проект?</div>
+									<div class="modal-finish__buttons">
+										<button class="modal-finish__btn-outline btn btn--outline" type="button"
+											data-micromodal-close>Нет</button>
+										<button class="modal-finish__btn-primary btn btn--primary" id="modal-review-btn" type="button">Да,
+											оставить отзыв</button>
+									</div>
+								</form>
+							</div>
+							<div class="modal-finish__review">
+								<h5 class="modal__title">Оставить отзыв</h5>
+								<form action="#" class="modal-finish__form">
+									<div class="form__item form__item--row modal-finish__review-inner">
+										<div class="modal-finish__row">
+											<div class="form__item-title">*Комментарий</div>
+											<div class="form__item-content">
+												<textarea placeholder="placeholder"></textarea>
+												<div class="form__item-textarea-caption">0/1000</div>
+											</div>
+										</div>
+										<div class="modal-finish__rating form__rating">
+											<div class="form__rating-item">
+												<div class="form__rating-name">Качество</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Профессионализм</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Стоимость</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Сроки</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+											<div class="form__rating-item">
+												<div class="form__rating-name">Общение</div>
+												<select class="star-rating">
+													<option value="">Select a rating</option>
+													<option value="5"></option>
+													<option value="4"></option>
+													<option value="3"></option>
+													<option value="2"></option>
+													<option value="1"></option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="t-center">
+										<button class="modal-finish__btn-primary btn btn--primary" type="button">Отправить отзыв</button>
+									</div>
+								</form>
+							</div>
+							<button type="button" class="modal__close" data-micromodal-close aria-label="Close this dialog window">
+								<img data-micromodal-close src="img/close.svg" width="20" height="20" alt="close" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/star-rating.min.js"></script>
+	<script src="js/micromodal.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

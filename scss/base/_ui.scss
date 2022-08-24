@@ -366,6 +366,11 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+		ul {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
 	}
 
 	&__rating-name {
