@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;500;600&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/libs.css" />
+	<link rel="stylesheet" href="css/style.css" />
 	<title>Document</title>
 	<style>
 		body {
 			font-size: 18px;
 			padding: 30px;
 		}
+
 		hr {
 			margin: 10px 0;
 		}
+
 		h2 {
 			font-size: 20px;
 			font-weight: 700;
 			margin: 10px 8px;
 		}
+
 		h3 {
 			margin: 8px;
 		}
+
 		a {
 			display: inline-block;
 			text-decoration: underline;
@@ -29,7 +40,9 @@
 		}
 	</style>
 </head>
+
 <body>
+	<div class="page">
 		<h3><a href="index.html">Главная</a></h3>
 		<h3><a href="profile.html">Профиль</a></h3>
 		<h3><a href="login.html">Вход</a></h3>
@@ -47,8 +60,11 @@
 		<h3><a href="create-project.html">Публикация проекта</a></h3>
 		<h3><a href="project-customer.html">Экран проекта для заказчика</a></h3>
 		<h3><a href="project-customer-win.html">Экран проекта выигравшая ставка для заказчика</a></h3>
+		<h3><a href="project-customer-end.html">Экран проекта выигравшая ставка для заказчика - завершение проекта</a></h3>
 		<h3><a href="project-customer-finish.html">Экран проекта заказчика завершаем проект</a></h3>
 		<h3><a href="project-customer-finish-2.html">Экран проекта заказчика завершаем проект - виден отзыв</a></h3>
+		<h3><a href="#" data-micromodal-trigger="modal-update">Обновить проект</a></h3>
+		<h3><a href="#" data-micromodal-trigger="modal-update-2">Обновить ставку</a></h3>
 		<h2>Этапы проекта для фрилансера</h2>
 		<h3><a href="catalog-projects.html">Каталог заказов</a></h3>
 		<h3><a href="project-freelancer.html">Экран проекта для фрилансера</a></h3>
@@ -59,6 +75,91 @@
 		<h3><a href="create-vacancy.html">Публикация вакансии</a></h3>
 		<h3><a href="vacancy.html">Экран вакансии</a></h3>
 		<hr>
-		
-	</p>
+		</p>
+		<div class="modal modal-update micromodal-slide" id="modal-update">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container">
+					<div class="modal__inner">
+						<div class="modal__content">
+							<h5 class="modal__title">Обновить данные в проекте</h5>
+							<form action="#" class="modal-update__form form">
+								<div class="form__item form__item--row mb-65">
+									<div class="form__item-title">Изменить стоимость</div>
+									<div class="form__item-content form__item-content--row">
+										<input type="number" value="100500">
+										<div class="form__item-currency">₽</div>
+									</div>
+								</div>
+								<div class="form__item form__item--row">
+									<div class="form__item-title">Описание</div>
+									<div class="form__item-content">
+										<textarea
+											placeholder="placeholder">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem libero tempore vel dolores, magni voluptates atque laboriosam? Exercitationem sapiente necessitatibus illum quisquam voluptate obcaecati, rem, possimus error officiis, cum reiciendis.</textarea>
+										<div class="modal-update__row">
+											<div class="form__item-helper">Helper Text</div>
+											<div class="form__item-textarea-caption">0/1000</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-update__btn-wrapper">
+									<button class="modal-update__btn btn btn--primary">Обновить проект</button>
+								</div>
+							</form>
+							<button type="button" class="modal__close" data-micromodal-close aria-label="Close this dialog window">
+								<img data-micromodal-close src="img/close.svg" width="20" height="20" alt="close" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="modal modal-update micromodal-slide" id="modal-update-2">
+				<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+					<div class="modal__container">
+						<div class="modal__inner">
+							<div class="modal__content">
+								<h5 class="modal__title">Обновить ставку</h5>
+								<form action="#" class="modal-update__form form">
+									<div class="form__item form__item--row mb-45">
+										<div class="form__item-title">*Стоимость</div>
+										<div class="form__item-content form__item-content--row">
+											<input type="number" value="100500" placeholder="0">
+											<div class="form__item-currency">₽</div>
+										</div>
+									</div>
+									<div class="form__item form__item--row mb-40">
+										<div class="form__item-title">*Срок выполнения</div>
+										<div class="form__item-content">
+											<input type="text" value="408" placeholder="placeholder">
+											<div class="form__caption">Время на выполнение проекта в днях</div>
+										</div>
+									</div>
+									<div class="form__item form__item--row">
+										<div class="form__item-title">*Комментарий</div>
+										<div class="form__item-content">
+											<textarea
+												placeholder="placeholder">Уже договорились, здесь можно обновить ставку</textarea>
+											<div class="modal-update__row">
+												<div class="form__item-helper">Helper Text</div>
+												<div class="form__item-textarea-caption">0/1000</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-update__btn-wrapper">
+										<button class="modal-update__btn btn btn--primary">Обновить ставку</button>
+									</div>
+								</form>
+								<button type="button" class="modal__close" data-micromodal-close aria-label="Close this dialog window">
+									<img data-micromodal-close src="img/close.svg" width="20" height="20" alt="close" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</body>
+<script src="js/micromodal.min.js"></script>
+<script src="js/main.js"></script>
+
 </html>

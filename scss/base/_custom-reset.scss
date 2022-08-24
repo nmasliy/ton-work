@@ -40,6 +40,10 @@ input[type='date']::-webkit-calendar-picker-indicator {
 // /Remove input date icon
 
 // Remove input number icon
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
 input[type='number'] {
 	-moz-appearance: textfield;
 }

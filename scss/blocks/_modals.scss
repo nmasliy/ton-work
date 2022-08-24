@@ -47,7 +47,6 @@
 		margin-bottom: 45px;
 		text-align: center;
 	}
-	
 }
 
 .modal-add {
@@ -65,7 +64,7 @@
 	&__btn-wrapper {
 		text-align: center;
 	}
-	
+
 	&__images {
 		margin-bottom: 30px;
 	}
@@ -91,7 +90,7 @@
 	}
 
 	&__images-item {
-		background-color: #E0E0E0;
+		background-color: #e0e0e0;
 		border-radius: 10px;
 		margin-bottom: 10px;
 		position: relative;
@@ -129,7 +128,93 @@
 	}
 }
 
+.modal-update {
+	.modal__inner {
+		padding: 30px 70px 80px;
+	}
+	.modal__container {
+		max-width: 1245px;
+	}
 
+	&__row {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px 120px;
+		margin-top: 8px;
+		.form__item-textarea-caption {
+			margin: 0;
+		}
+	}
+
+	&__btn-wrapper {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	&__btn {
+		min-width: 255px;
+		font-weight: 600;
+	}
+}
+
+.modal-finish {
+	.modal__container {
+		max-width: 605px;
+	}
+	.modal__inner {
+		padding: 30px 95px 90px;
+	}
+	&.active {
+		.modal__inner {
+			padding: 30px 95px 50px;
+		}
+		.modal__container {
+			max-width: 1140px;
+		}
+		.modal-finish__request {
+			display: none;
+		}
+		.modal-finish__review {
+			display: block;
+		}
+	}
+	&__review {
+		display: none;
+		textarea {
+			min-height: 168px;
+		}
+	}
+	&__review-inner {
+		gap: 30px;
+		margin-bottom: 55px;
+	}
+	&__row {
+		display: flex;
+		flex-grow: 1;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 18px;
+		margin-bottom: 75px;
+		text-align: center;
+	}
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 15px 60px;
+	}
+	&__btn-primary {
+		width: 255px;
+		padding: 11px 20px;
+	}
+	&__btn-outline {
+		padding: 11px 17px;
+	}
+}
 
 /**************************\
     Demo Animation Style
@@ -182,18 +267,18 @@
 	display: block;
 }
 
-.micromodal-slide[aria-hidden="false"] .modal__overlay {
+.micromodal-slide[aria-hidden='false'] .modal__overlay {
 	animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden="false"] .modal__container {
+.micromodal-slide[aria-hidden='false'] .modal__container {
 	animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden="true"] .modal__overlay {
+.micromodal-slide[aria-hidden='true'] .modal__overlay {
 	animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden="true"] .modal__container {
+.micromodal-slide[aria-hidden='true'] .modal__container {
 	animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }

@@ -1,1 +1,7 @@
+@use "libs/star-rating.min";
 @use "libs/reset.min";
+
+:root {
+	--gl-star-size: 25px;
+	--gl-star-full: url('../img/star.svg');  
+}

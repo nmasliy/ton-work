@@ -79,6 +79,26 @@
 			right: -200px;
 		}
 	}
+	.modal-update {
+		.modal__inner {
+			padding: 30px 40px;
+		}
+	}
+	.modal-finish {
+		
+		&.active .modal__inner {
+			padding: 50px 20px 30px;
+		}
+		&__review-inner {
+			display: block;
+		}
+		&__row {
+			margin-bottom: 30px;
+			.form__item-textarea-caption {
+				margin-right: 0;
+			}
+		}
+	}
 	.portfolio__item--25 {
 		width: calc(100% / 3 - (60px / 3));
 	}
@@ -331,6 +351,32 @@
 	.vacancy-card__tags {
 		font-size: 14px;
 	}
+	.modal-update {
+		.modal__inner {
+			padding: 30px 20px;
+		}
+	}
+	.modal-finish {
+		.modal__container {
+			max-width: 500px;
+		}
+		.modal__inner {
+			padding: 60px 30px 30px;
+		}
+		&__text {
+			font-size: 16px;
+			margin-bottom: 45px;
+		}
+		&__buttons {
+			gap: 15px 30px;
+		}
+		&__btn-primary {
+			width: auto;
+		}
+	}
+	.project__tabs li {
+		width: 140px;
+	}
 	.profile {
 		&__inner {
 			flex-wrap: wrap;
@@ -551,6 +597,9 @@
 		}
 	}
 	.form {
+		&__rating-name {
+			margin-right: 10px;
+		}
 		.form__item-title {
 			margin-top: 0;
 		}
@@ -562,6 +611,11 @@
 			width: auto;
 			margin-right: 0;
 			margin-bottom: 12px;
+		}
+	}
+	.modal-finish {
+		&__row {
+			flex-direction: column;
 		}
 	}
 }
