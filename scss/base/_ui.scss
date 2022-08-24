@@ -159,6 +159,26 @@
 		}
 	}
 
+	&--flex-sm {
+		@extend .btn--flex;
+		width: auto;
+		padding: 3px 16px;
+		svg,
+		img {
+			margin-left: 15px;
+		}
+	}
+
+	&--sm {
+		padding: 3px 15px;
+		line-height: 1.5;
+	}
+
+	&--sm-y {
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
 	&--underline {
 		color: $dark;
 		font-weight: 600;
@@ -196,15 +216,6 @@
 		pointer-events: none;
 	}
 
-	&--sm {
-		padding: 3px 15px;
-		line-height: 1.5;
-	}
-
-	&--sm-y {
-		padding-top: 11px;
-		padding-bottom: 11px;
-	}
 }
 
 .overlay {
@@ -259,7 +270,7 @@
 .tags {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px 33px;
+	gap: 6px;
 	margin-bottom: 15px;
 
 	li {
@@ -548,7 +559,7 @@
 		margin-top: 5px;
 		color: #757575;
 		a {
-			color: #085f16;
+			color: $pressed;
 		}
 	}
 

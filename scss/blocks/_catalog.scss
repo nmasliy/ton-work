@@ -162,7 +162,7 @@
 	&__rating-caption {
 		font-size: 14px;
 		line-height: 1.43;
-		color: #085F16;
+		color: $pressed;
 		margin-right: 10px;
 	}
 
@@ -184,7 +184,7 @@
 	&__reviews-caption {
 		font-size: 14px;
 		line-height: 1.43;
-		color: #085f16;
+		color: $pressed;
 	}
 
 	&__reviews-count {
