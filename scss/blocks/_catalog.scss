@@ -43,6 +43,29 @@
 		margin-bottom: 50px;
 	}
 
+	&__buttons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px 5px;
+		.btn {
+			flex-grow: 1;
+			max-width: 200px;
+		}
+	}
+
+	&__salary {
+		margin-bottom: 25px;
+		input {
+			width: 160px;
+		}
+	}
+
+	&__salary-row {
+		display: flex;
+		gap: 10px;
+		margin-bottom: 25px;
+	}
+
 	&__form {
 		background-color: $white;
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -57,6 +80,31 @@
 			}
 			.filter__name {
 				background: url('../img/remove-circle-dark.svg') right no-repeat;
+			}
+		}
+		&--arrow {
+			.filter__name {
+				background: 0;
+				position: relative;
+				&::after {
+					position: absolute;
+					content: '';
+					width: 20px;
+					height: 20px;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					background: url('../img/arrow-down.svg') right no-repeat;
+					transition: $transition;
+				}
+			}
+			&.active {
+				.filter__name {
+					background: 0;
+					&::after {
+						transform: translateY(-50%) rotate(180deg);
+					}
+				}
 			}
 		}
 	}
@@ -174,7 +222,7 @@
 		font-size: 14px;
 		line-height: 1.43;
 	}
-	
+
 	&__reviews {
 		display: flex;
 		justify-content: flex-end;

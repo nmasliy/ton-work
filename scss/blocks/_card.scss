@@ -112,9 +112,11 @@
 	&__avatar-wrapper {
 		display: flex;
 		align-items: center;
+		margin-bottom: 10px;
 	}
 
 	&__avatar {
+		display: flex;
 		img {
 			width: 45px;
 			height: 45px;
@@ -127,6 +129,13 @@
 		font-size: 16px;
 		margin-left: 11px;
 	}
+
+	&__btn {
+		align-self: flex-end;
+		margin-top: auto;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
 }
 .vacancy-card {
 	&__tags {
@@ -138,6 +147,13 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 10px;
+		}
+	}
+
+	&__avatar-wrapper {
+		img {
+			width: 35px;
+			height: 35px;
 		}
 	}
 

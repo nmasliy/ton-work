@@ -779,6 +779,9 @@
 		&__price {
 			display: inline-block;
 		}
+		&__btn {
+			margin-top: 15px;
+		}
 		&__price-caption {
 			display: inline-block;
 			margin-bottom: 10px;
@@ -795,7 +798,7 @@
 			}
 		}
 		&__info-row {
-			justify-content: flex-start;
+			justify-content: space-between;
 		}
 		&__bids {
 			margin-top: 0;
