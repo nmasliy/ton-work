@@ -198,7 +198,6 @@
 
 	&--sm {
 		padding: 3px 15px;
-		font-weight: 500;
 		line-height: 1.5;
 	}
 
@@ -257,7 +256,7 @@
 	}
 }
 
-.categories-list {
+.tags {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px 33px;
