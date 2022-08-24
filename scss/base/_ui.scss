@@ -356,6 +356,11 @@
 			}
 		}
 	}
+	
+	.form__input-small {
+		width: 90px;
+		min-width: auto;
+	}
 
 	&__rating-item {
 		display: flex;
