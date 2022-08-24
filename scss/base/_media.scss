@@ -772,6 +772,22 @@
 		&__info {
 			display: block;
 			text-align: left;
+			&--row {
+				display: flex;
+				justify-content: space-between;
+				gap: 5px;
+				align-items: center;
+				flex-direction: row;
+			}
+		}
+		&__bids {
+			margin-top: 0;
+			span {
+				width: auto;
+			}
+		}
+		&__date {
+			margin-bottom: 0;
 		}
 	}
 	.vacancy {
