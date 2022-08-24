@@ -935,6 +935,17 @@
 		&__file-caption {
 			font-size: 14px;
 		}
+		&__item-content-tripple {
+			display: grid;
+			grid-template-columns: auto 65px;
+			justify-content: flex-start;
+			input:nth-child(2) {
+				order: 3;
+			}
+			.app-select {
+				order: 2;
+			}
+		}
 		&__textarea-buttons {
 			button {
 				padding: 5px;

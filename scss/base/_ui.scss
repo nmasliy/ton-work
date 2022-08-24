@@ -641,6 +641,20 @@
 
 	&__item-content-row {
 		display: flex;
+		flex-wrap: wrap;
+		gap: 10px 30px;
+		margin-bottom: 5px;
+		input {
+			width: 160px;
+		}
+		select {
+			width: auto;
+		}
+	}
+
+	&__item-content-tripple {
+		display: flex;
+		flex-wrap: wrap;
 		gap: 10px 30px;
 		margin-bottom: 5px;
 		input {

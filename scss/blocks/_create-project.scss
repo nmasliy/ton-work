@@ -3,4 +3,14 @@
 	&__title {
 		margin-bottom: 50px;
 	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		gap: 10px 120px;
+		margin-top: 7px;
+		& > * {
+			margin: 0;
+		}
+	}
 }

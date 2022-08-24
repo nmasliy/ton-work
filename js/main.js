@@ -83,8 +83,10 @@ window.addEventListener('DOMContentLoaded', function () {
 			} else {
 				$links.forEach(link => {
 					link.addEventListener('click', function (e) {
-						e.preventDefault()
-						link.nextElementSibling.classList.toggle('active')
+						if (link.nextElementSibling) {
+							e.preventDefault()
+							link.nextElementSibling.classList.toggle('active')
+						}
 					})
 				})
 			}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TON work</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;500;600&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/libs.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="page">
+		<header class="header header-profile">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo logo">
+						<img src="img/logo.svg" width="202" height="65" alt="TON work" />
+					</a>
+					<div class="header__menu">
+						<div class="header__menu-inner">
+							<nav class="header__navigation navigation">
+								<ul class="navigation__list">
+									<li>
+										<a href="#">Мои проекты
+											<img width="20" height="20" src="img/add-circle.svg" alt="add" /></a>
+									</li>
+									<li>
+										<a href="#">Мои вакансии
+											<img width="20" height="20" src="img/add-circle.svg" alt="add" /></a>
+									</li>
+									<li><a href="#">Соискатели</a></li>
+									<li><a href="#">Фрилансеры</a></li>
+								</ul>
+							</nav>
+							<div class="header__close">&times;</div>
+						</div>
+						<div class="header__profile">
+							<a class="header__notificatitons" href="#"><img src="img/bell.svg" width="20" height="20"
+									alt="notifications" /></a>
+							<a class="header__avatar" href="#"><img src="img/header-avatar.png" width="65" height="65"
+									alt="avatar" /></a>
+						</div>
+						<div class="header__burger">
+							<span></span><span></span><span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page__content pb-60">
+			<section class="create-project">
+				<div class="container">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Мои проекты</a></li>
+							<li><a href="#">Публикация проекта</a></li>
+						</ul>
+					</div>
+					<div class="create-project__inner">
+						<div class="create-project__title title">Публикация проекта</div>
+						<form class="create-project__form form" action="#">
+							<div class="form__item form__item--row">
+								<div class="form__item-title">*Название проекта</div>
+								<div class="form__item-content">
+									<input type="text" placeholder="Placeholder">
+									<div class="form__caption">Укажите в названии должность вакансии, чтобы увеличить количество откликов
+									</div>
+								</div>
+							</div>
+							<div class="form__item form__item--row">
+								<div class="form__item-title mt-40">*Описание проекта</div>
+								<div class="form__item-content">
+									<div class="form__textarea-buttons">
+										<ul>
+											<li><button type="button"><img width="20" height="20" src="img/TextBolder.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/TextUnderline.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/TextBolder.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/TextItalic.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/TextStrikethrough.svg"
+														alt=""></button></li>
+											<li><button type="button"><img width="20" height="20" src="img/Paperclip.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/ListBullets.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/ListNumbers.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/TextAlignLeft.svg" alt=""></button>
+											</li>
+											<li><button type="button"><img width="20" height="20" src="img/TextAlignCenter.svg"
+														alt=""></button></li>
+											<li><button type="button"><img width="20" height="20" src="img/TextAlignJustify.svg"
+														alt=""></button></li>
+										</ul>
+									</div>
+									<div class="form__textarea-wrapper mb-45">
+										<textarea placeholder=" "></textarea>
+										<div class="form__textarea-placeholder">Что вы предлагаете соискателю? <br>
+											Укажите уровень зарплаты, бонусы, информацию об оформлении, страховке, рабочем месте, расположении
+											офиса, карьерном
+											росте и тренингах.<br>
+											Что необходимо будет делать работнику?<br>
+											Какие ключевые требования выдвигаются к соискателю?</div>
+										<div class="create-project__row">
+											<div class="form__caption">Постарайтесь максимально подробно описать вакансию. Чем больше
+												информации, тем проще соискателю принять решение.</div>
+											<div class="form__item-textarea-caption">0/1000</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item form__item--row mb-45">
+								<div class="form__item-title">Зарплата</div>
+								<div class="form__item-content">
+									<div class="form__item-content-tripple">
+										<input type="number" placeholder="От">
+										<input type="number" placeholder="До">
+										<div class="app-select" id="select-currency">
+											<div class="app-select__current">
+												<span class="app-select__value" data-value="1">₽</span>
+											</div>
+											<div class="app-select__options">
+												<div class="app-select__option" data-value="1">₽</div>
+												<div class="app-select__option" data-value="2">$</div>
+												<div class="app-select__option" data-value="3">TON</div>
+											</div>
+										</div>
+									</div>
+									<div class="form__caption">Укажите уровень месячной компенсации. Наличие зарплаты в вакансии
+										увеличивает число показов и откликов на нее.</div>
+								</div>
+							</div>
+							<div class="form__item form__item--row">
+								<div class="form__item-title">*Укажите категорию</div>
+								<div class="form__item-content">
+									<select name="category" class="form__category-select">
+										<option value="1" selected disabled>Выбрать категорию</option>
+										<option value="2">Категория 1</option>
+										<option value="3">Категория 2</option>
+										<option value="4">Категория 3</option>
+									</select>
+									<ul class="form__categories tags">
+										<li>Добавленная категория</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form__item form__item--row mb-30">
+								<div class="form__item-title">*Формат работы</div>
+								<div class="form__item-content">
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="format" value="1">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Удаленная работа</span>
+										</label>
+									</div>
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="format" value="2">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Работа в офисе</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__item form__item--row mb-30">
+								<div class="form__item-title">*Тип занятости</div>
+								<div class="form__item-content mt-5">
+									<div class="form__radio mb-15">
+										<label>
+											<input type="radio" name="type" value="1">
+											<span class="form__radio-circle"></span>
+											<span class="form__radio-text">Полная занятость</span>
+										</label>
+									</div>
+									<div class="form__radio">
+										<label>
+											<input type="radio" name="type" value="2">
+											<span class="form__radio-circle"></span>
+											<span class="form__radio-text">Неполная занятость</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__item form__item--row mb-30">
+								<div class="form__item-title">*Уровень</div>
+								<div class="form__item-content">
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="level" value="1">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Любая</span>
+										</label>
+									</div>
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="level" value="2">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Стажер (intern)</span>
+										</label>
+									</div>
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="level" value="3">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Младший (Junior)</span>
+										</label>
+									</div>
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="level" value="3">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Средний (Middle)</span>
+										</label>
+									</div>
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="level" value="3">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Старший (Senior)</span>
+										</label>
+									</div>
+									<div class="form__checkbox">
+										<label>
+											<input type="checkbox" name="level" value="3">
+											<span class="form__checkbox-element"></span>
+											<span class="form__checkbox-text">Ведущий (Lead)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__item form__item--row">
+								<div class="form__item-title">Страна</div>
+								<div class="form__item-content">
+									<select name="country" class="w-255">
+										<option value="1" selected disabled>Выберите страну</option>
+										<option value="2">Категория 1</option>
+										<option value="3">Категория 2</option>
+										<option value="4">Категория 3</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__item form__item--row mb-65">
+								<div class="form__item-title">Город</div>
+								<div class="form__item-content">
+									<select name="city" class="w-255">
+										<option value="1" selected disabled>Выберите город</option>
+										<option value="2">Категория 1</option>
+										<option value="3">Категория 2</option>
+										<option value="4">Категория 3</option>
+									</select>
+								</div>
+							</div>
+							<button class="btn btn--sm-y btn--primary">Опубликовать</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__col">
+						<h6 class="footer__title">Фриланс</h6>
+						<ul>
+							<li><a href="#">Фриланс-проекты</a></li>
+							<li><a href="#">Работы фрилансеров</a></li>
+							<li><a href="#">Проверка профиля</a></li>
+							<li><a href="#">Конкурсы</a></li>
+							<li><a href="#">Сейф</a></li>
+							<li><a href="#">Бизнес Сейф</a></li>
+							<li><a href="#">Все фрилансеры</a></li>
+							<li><a href="#">Все заказчики</a></li>
+							<li><a href="#">Plus</a></li>
+							<li><a href="#">День фрилансера</a></li>
+							<li><a href="#">Отзывы о фрилансерах</a></li>
+							<li><a href="#">Отзывы о заказчиках</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="footer__title">Постоянная работа</h6>
+						<ul>
+							<li><a href="#">Все вакансии</a></li>
+							<li><a href="#">Удаленная работа</a></li>
+							<li><a href="#">О вакансиях</a></li>
+							<li><a href="#">Опубликовать вакансию</a></li>
+							<li><a href="#">Список соискателей</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="footer__title">Полезная информация</h6>
+						<ul>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Мы в прессе</a></li>
+							<li><a href="#">Идеи и предложения</a></li>
+							<li><a href="#">Опубликовать вакансию</a></li>
+							<li><a href="#">Статистика цен</a></li>
+							<li><a href="#">Партнеры и акции</a></li>
+							<li><a href="#">Регистрация ФЛП</a></li>
+							<li><a href="#">Наша команда</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h6 class="footer__title">Помощь</h6>
+						<ul>
+							<li><a href="#">База знаний</a></li>
+							<li><a href="#">Статьи о фрилансе</a></li>
+						</ul>
+						<div class="divider"></div>
+						<ul>
+							<li><a href="registration.html">Регистрация</a></li>
+							<li><a href="#">Забыли пароль?</a></li>
+							<li><a href="#">Написать Команде заботы о клиентах</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay"></div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
