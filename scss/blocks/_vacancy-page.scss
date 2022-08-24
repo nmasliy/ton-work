@@ -1,0 +1,26 @@
+.vacancy-page {
+	&__title {
+		margin-bottom: 10px;
+		font-size: 24px;
+	}
+
+	&__list {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__item {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link-wrapper {
+		text-align: right;
+		margin-bottom: 40px;
+	}
+
+}

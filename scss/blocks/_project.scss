@@ -19,6 +19,9 @@
 		font-size: 14px;
 		line-height: 1.43;
 		color: $pressed;
+		&--gray {
+			color: #757575;
+		}
 	}
 
 	&__price {
@@ -77,6 +80,10 @@
 
 		&.updated {
 			min-height: 175px;
+		}
+
+		&.high {
+			min-height: 270px;
 		}
 
 		&-title {
@@ -488,9 +495,6 @@
 		&:hover {
 			text-decoration: underline;
 		}
-	}
-
-	&__rating {
 	}
 
 	&__answer {

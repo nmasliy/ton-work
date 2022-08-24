@@ -45,6 +45,24 @@
 		text-align: right;
 	}
 
+	&__info-row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
+		margin-bottom: 15px;
+		gap: 10px 40px;
+		.card__date {
+			margin-bottom: 0;
+		}
+	}
+
+	&__location {
+		font-size: 14px;
+		line-height: 1.43;
+		color: #757575;
+	}
+
 	&__date {
 		color: #757575;
 		margin-bottom: 15px;

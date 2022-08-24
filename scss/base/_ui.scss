@@ -178,6 +178,15 @@
 		padding-bottom: 11px;
 	}
 
+	&--xs-y {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	&--min-width {
+		min-width: 160px;
+	}
+
 	&--underline {
 		color: $dark;
 		font-weight: 600;
