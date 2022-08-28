@@ -158,6 +158,23 @@
 		}
 	}
 
+	&--outline-blue {
+		border-radius: 8px;
+		background: linear-gradient($white, $white) padding-box,
+			linear-gradient(45.5deg, #008ce9 1.68%, #00bb9a 97.52%, #68e0cf 97.52%)
+				border-box;
+		border-radius: 8px;
+		border: 2px solid transparent;
+		transition: $transition;
+		color: #008CE9;
+		&:hover {
+			text-decoration: underline;
+		}
+		span {
+			@extend .color-secondary;
+		}
+	}
+
 	&--flex-sm {
 		@extend .btn--flex;
 		width: auto;
@@ -364,7 +381,7 @@
 			}
 		}
 	}
-	
+
 	.form__input-small {
 		width: 90px;
 		min-width: auto;
@@ -847,5 +864,4 @@
 			border-radius: 0px 0px 4px 4px;
 		}
 	}
-
 }
