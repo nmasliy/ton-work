@@ -881,6 +881,13 @@
 		background-color: $accent;
 		margin-left: 10px;
 	}
+	&__title {
+		display: flex;
+		align-items: center;
+		span {
+			margin-left: 10px;
+		}
+	}
 	table {
 		width: 100%;
 		font-size: 14px;
@@ -888,11 +895,11 @@
 	}
 	thead tr {
 		background-color: #f3f3f3;
-		font-weight: 700;
 	}
 	th {
 		text-align: left;
 		padding: 15px;
+		font-weight: 700;
 		&:first-child {
 			border-radius: 10px 0px 0px 0px;
 		}
@@ -926,6 +933,22 @@
 	&--gray {
 		thead tr {
 			background-color: #e0e0e0;
+		}
+	}
+	&--border {
+		border-radius: 10px 10px 0 0;
+		border-left: 1px solid  #E0E0E0;
+		border-right: 1px solid  #E0E0E0;
+		th {
+			&:last-child {
+				border-right: 1px solid  #E0E0E0;
+			}
+			&:first-child {
+				border-left: 1px solid  #E0E0E0;
+			}
+		}
+		td {
+			border-bottom: 1px solid  #E0E0E0;
 		}
 	}
 }

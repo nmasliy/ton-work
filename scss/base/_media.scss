@@ -47,6 +47,14 @@
 			padding: 30px;
 		}
 	}
+	.cabinet {
+		&__inner {
+			display: block;
+		}
+		&__aside {
+			margin-bottom: 30px;
+		}
+	}
 	.project-review {
 		&__answer {
 			padding-left: 0;
@@ -812,6 +820,7 @@
 		}
 		&__info-row {
 			justify-content: space-between;
+			margin-bottom: 5px;
 		}
 		&__bids {
 			margin-top: 0;
