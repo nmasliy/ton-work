@@ -63,7 +63,7 @@
 			display: block;
 			padding-bottom: 30px;
 			&:first-child {
-				border-bottom: 1px solid #E0E0E0;
+				border-bottom: 1px solid #e0e0e0;
 			}
 		}
 		&__col {
@@ -123,7 +123,6 @@
 		}
 	}
 	.modal-finish {
-		
 		&.active .modal__inner {
 			padding: 50px 20px 30px;
 		}
@@ -430,7 +429,8 @@
 	.project {
 		&__aside-btn {
 			width: auto;
-			svg, img {
+			svg,
+			img {
 				margin-left: 18px;
 			}
 		}
@@ -789,6 +789,11 @@
 		}
 		&__btn {
 			min-width: 250px;
+		}
+	}
+	.cabinet {
+		&--offset-top {
+			padding-top: 0;
 		}
 	}
 	.card {

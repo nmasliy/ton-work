@@ -28,6 +28,9 @@
 	.pt-10 {
 		padding-top: 10px;
 	}
+	.pt-60 {
+		padding-top: 60px;
+	}
 	.pb-60 {
 		padding-bottom: 60px;
 	}
@@ -37,6 +40,9 @@
 	.px-15 {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.py-60 {
+		padding: 60px 0;
 	}
 	.m-0 {
 		margin: 0;
@@ -70,6 +76,9 @@
 	}
 	.mb-65 {
 		margin-bottom: 65px;
+	}
+	.bold {
+		font-weight: 600;
 	}
 	.flex-start {
 		align-items: flex-start;

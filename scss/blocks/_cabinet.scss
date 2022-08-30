@@ -1,5 +1,8 @@
 .cabinet {
 	font-size: 16px;
+	&--offset-top {
+		padding-top: 60px;
+	}
 	&__inner {
 		display: grid;
 		grid-template-columns: 255px auto;
