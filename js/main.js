@@ -94,6 +94,29 @@ window.addEventListener('DOMContentLoaded', function () {
 		initMenuHover()
 	}
 
+	function initLoginMenu() {
+		const $loginMenu = document.querySelector('.login-menu')
+		const $avatar = document.querySelector('.header__avatar')
+		const MOBILE_MENU_BREAKPOINT = 1024
+
+		if ($avatar && $loginMenu && window.innerWidth > MOBILE_MENU_BREAKPOINT) {
+			$avatar.addEventListener('click', function (e) {
+				e.preventDefault()
+				$loginMenu.classList.add('active')
+			})
+			document.body.addEventListener('click', function (e) {
+				e.preventDefault()
+				if (
+					!e.target.closest('.header__avatar') &&
+					!e.target.closest('.login-menu')
+				) {
+					$loginMenu.classList.remove('active')
+				}
+			})
+		}
+		
+	}
+
 	function initCopyProfileLink() {
 		const $button = document.querySelector('.profile__title button')
 
@@ -148,8 +171,30 @@ window.addEventListener('DOMContentLoaded', function () {
 			})
 			$sections.forEach(item => {
 				window.addEventListener('scroll', function () {
-					checkActiveSection(item)
+					if (item.id) {
+						checkActiveSection(item)
+					}
 				})
+			})
+		}
+	}
+
+	function initProfileMore() {
+		const $moreBtn = document.querySelector('.profile__arrow')
+		const $moreBtnText = document.querySelector('.profile__arrow span')
+		const $profile = document.querySelector('.profile__contacts')
+
+		if ($moreBtn) {
+			const moreText = $moreBtnText.dataset.show
+			const lessText = $moreBtnText.dataset.hide
+			$moreBtn.addEventListener('click', function () {
+				if ($profile.classList.contains('active')) {
+					$moreBtnText.textContent = moreText
+					$profile.classList.remove('active')
+				} else {
+					$moreBtnText.textContent = lessText
+					$profile.classList.add('active')
+				}
 			})
 		}
 	}
@@ -312,4 +357,6 @@ window.addEventListener('DOMContentLoaded', function () {
 	initTabs()
 	initFinishModal()
 	initStarsRating()
+	initProfileMore()
+	initLoginMenu()
 })

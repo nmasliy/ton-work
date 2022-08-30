@@ -166,7 +166,7 @@
 		border-radius: 8px;
 		border: 2px solid transparent;
 		transition: $transition;
-		color: #008CE9;
+		color: #008ce9;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -862,6 +862,70 @@
 
 		&:last-child {
 			border-radius: 0px 0px 4px 4px;
+		}
+	}
+}
+
+.section-table {
+	overflow-x: auto;
+	&__num {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 20px;
+		min-height: 20px;
+		font-weight: 500;
+		font-size: 12px;
+		color: $white;
+		border-radius: 50%;
+		background-color: $accent;
+		margin-left: 10px;
+	}
+	table {
+		width: 100%;
+		font-size: 14px;
+		min-width: 600px;
+	}
+	thead tr {
+		background-color: #f3f3f3;
+		font-weight: 700;
+	}
+	th {
+		text-align: left;
+		padding: 15px;
+		&:first-child {
+			border-radius: 10px 0px 0px 0px;
+		}
+		&:last-child {
+			border-radius: 0px 10px 0px 0px;
+		}
+	}
+	td {
+		color: $dark;
+		padding: 15px;
+	}
+	tr {
+		background-color: $white;
+		&.tr-green {
+			background-color: #f2fff2;
+		}
+		&.tr-gray {
+			background-color: #f3f3f3;
+		}
+	}
+	tbody {
+		td {
+			&:first-child {
+				border-radius: 10px 0px 0px 0px;
+			}
+			&:last-child {
+				border-radius: 0px 10px 0px 0px;
+			}
+		}
+	}
+	&--gray {
+		thead tr {
+			background-color: #e0e0e0;
 		}
 	}
 }

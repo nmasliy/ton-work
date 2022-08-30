@@ -172,10 +172,21 @@
 	}
 }
 .review {
-	border-bottom: 1px solid #e0e0e0;
 	padding-left: 15px;
+
+	&--answer {
+		border-radius: 0 0 10px 10px;
+		.review__content {
+			padding-left: 25px;
+		}
+	}
+
+	&--main {
+		border-radius: 10px 10px 0 0;
+	}
+	
 	&__content {
-		width: 43%;
+		width: 49%;
 	}
 
 	&__footer {

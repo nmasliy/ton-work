@@ -72,6 +72,12 @@
 	}
 	.review {
 		display: block;
+		&--answer {
+			border-top: 1px solid #e0e0e0;
+			.review__content {
+				padding-left: 0;
+			}
+		}
 		&__content {
 			margin-bottom: 30px;
 			width: 100%;
@@ -138,6 +144,12 @@
 			}
 		}
 	}
+	.login-menu {
+		display: block;
+		position: static;
+		font-size: 16px;
+		margin-top: 20px;
+	}
 	.header {
 		padding: 12px 0;
 		&-profile {
@@ -153,7 +165,7 @@
 			transform: translateX(150%);
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: -12px;
 			width: 280px;
 			height: 100vh;
 			z-index: 10;
@@ -420,7 +432,8 @@
 	}
 	.profile {
 		&__inner {
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
+			display: block;
 		}
 		&__btn {
 			width: auto;
